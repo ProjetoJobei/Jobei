@@ -15,8 +15,14 @@
 </h5>
 
 ---
+## :bookmark: Sobre
+
+
+## :zap: Como usar
 
 ## Objetivo 
+
+### :mortar_board: Créditos
 Projeto desenvolvido como complemento para o Trabalho de Conclusão de Curso (TCC) do Ensino Médio Integrado ao Técnico de Informática Para Internet da Etec Prof.° Maria Cristina Medeiros.
 
 ## :busts_in_silhouette: Integrantes do grupo:
@@ -31,4 +37,4 @@ Projeto desenvolvido como complemento para o Trabalho de Conclusão de Curso (TC
 ---
 
 ### :memo: License
-Esse projeto está sob a [licença MIT](LICENSE).
+Esse projeto está sob a [Licença MIT](LICENSE).
