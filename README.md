@@ -1,17 +1,17 @@
 <p align="center"> <img width="15%" src="./assets/img/icones/logo.png"></img> </p>
-<h3 align="center"> TCC - Etim 2020 </h3>
+<h3 align="center"> TCC - Etim 2019-2021 </h3>
 
 <p align="center">
-    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/BiancaFSilva/TCC-Etim2020">
-    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/BiancaFSilva/TCC-Etim2020">
-    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/BiancaFSilva/TCC-Etim2020">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/BiancaFSilva/TCC-Etim2020">
+    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/BiancaFSilva/TCC">
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/BiancaFSilva/TCC">
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/BiancaFSilva/TCC">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/BiancaFSilva/TCC">
 </p>
 
 ---
 
 <h5 align="center">
-<a href="https://biancafsilva.github.io/TCC-Etim2020/#">Home</a>
+<a href="https://biancafsilva.github.io/TCC/#">Home</a>
 </h5>
 
 ---
