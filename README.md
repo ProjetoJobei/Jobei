@@ -16,13 +16,13 @@
 
 ---
 ## :bookmark: Sobre
+### Objetivo
 
+## :rocket: Tecnologias 
 
-## :zap: Como usar
+## :zap: Como usar 
 
-## Objetivo 
-
-### :mortar_board: Créditos
+## :mortar_board: Créditos
 Projeto desenvolvido como complemento para o Trabalho de Conclusão de Curso (TCC) do Ensino Médio Integrado ao Técnico de Informática Para Internet da Etec Prof.° Maria Cristina Medeiros.
 
 ## :busts_in_silhouette: Integrantes do grupo:
