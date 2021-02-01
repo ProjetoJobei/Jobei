@@ -19,6 +19,11 @@
 ## Objetivo 
 Projeto desenvolvido como complemento para o Trabalho de Conclusão de Curso (TCC) do Ensino Médio Integrado ao Técnico de Informática Para Internet da Etec Prof.° Maria Cristina Medeiros.
 
+## :busts_in_silhouette: Integrantes do grupo:
+  - [Bianca Letícia](https://github.com/BiancaFSilva)
+  - [Emanuela de Almeida](https://github.com/Manu0121)
+  - [Isabelle Damacena](https://github.com/IsabelleDamacena)
+
 ### :art: Paleta de cores :art:
 ![#000000](https://placehold.it/15/000000/000000?text=+) `#000000`
 ![#FFFFFF](https://placehold.it/15/FFFFFF/000000?text=+) `#FFFFFF`
