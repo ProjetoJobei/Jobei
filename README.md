@@ -16,7 +16,7 @@
 
 ---
 ## :bookmark: Sobre
-  - ### Objetivo
+   ### Objetivo
 
 ## :rocket: Tecnologias 
 
