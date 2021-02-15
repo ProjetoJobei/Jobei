@@ -25,6 +25,11 @@
 ---
 
 ## :busts_in_silhouette: Integrantes do grupo:
+  <b> Ana Carolyny </b>  
+    [![Github Badge](https://img.shields.io/badge/-Github-black?style=flat-square&logo=Github&logoColor=white&link=https://github.com/AnaThomazini55)](https://github.com/AnaThomazini55)
+    [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/----)](https://www.linkedin.com/in/----)
+    [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:carolyny.ana04@gmail.com)](mailto:carolyny.ana04@gmail.com)
+  
   <b> Bianca Silva </b>  
     [![Github Badge](https://img.shields.io/badge/-Github-black?style=flat-square&logo=Github&logoColor=white&link=https://github.com/BiancaFSilva)](https://github.com/BiancaFSilva)
     [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/biancafsilva/)](https://www.linkedin.com/in/biancafsilva/)
