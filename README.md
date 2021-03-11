@@ -1,4 +1,4 @@
-<p align="center"> <img width="15%" src="./assets/img/icons/logoTCC.jpg"></img> </p>
+<p align="center"> <img width="13%" src="https://user-images.githubusercontent.com/60801421/110820079-876c4d00-826d-11eb-96fc-23cb4fc05436.png"></img> </p>
 <h3 align="center"> Etim 2019-2021 </h3>
 
 <p align="center">
@@ -11,12 +11,13 @@
 ---
 
 <h5 align="center">
-<a href="https://biancafsilva.github.io/TCC/#"> Home </a>
+    <a href="https://biancafsilva.github.io/TCC/#"> Home </a> - 
+    <a href="https://biancafsilva.github.io/TCC/#"> Sobre </a> - 
+    <a href="https://biancafsilva.github.io/TCC/#"> Contato </a> - 
 </h5>
 
 ---
 ## :bookmark: Sobre
-   ### Objetivo
 
 ## :rocket: Tecnologias 
 
