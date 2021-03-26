@@ -47,7 +47,7 @@
     [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:damacenaisabelle@gmail.com)](mailto:damacenaisabelle@gmail.com)
   
 ## :mortar_board: Créditos
-Projeto desenvolvido para o Trabalho de Conclusão de Curso (TCC) do Ensino Médio Integrado ao Técnico de Informática Para Internet da Etec Prof.° Maria Cristina Medeiros e orientado pela prof.ª Cintia Pinho.
+Projeto desenvolvido para o Trabalho de Conclusão de Curso (TCC) do Ensino Médio Integrado ao Técnico de Informática Para Internet da Etec Prof.ª Maria Cristina Medeiros e orientado pela prof.ª Cintia Pinho.
 
 ### :memo: License
 Esse projeto está sob a [Licença MIT](LICENSE).
