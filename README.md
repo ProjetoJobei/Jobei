@@ -11,9 +11,9 @@
 ---
 
 <h5 align="center">
-    <a href="https://biancafsilva.github.io/TCC/#"> Home </a> - 
-    <a href="https://biancafsilva.github.io/TCC/#"> Sobre </a> - 
-    <a href="https://biancafsilva.github.io/TCC/#"> Contato </a>
+    <a href="https://biancafsilva.github.io/TCC-Jobei"> Home </a> - 
+    <a href="https://biancafsilva.github.io/TCC-Jobei/#"> Sobre </a> - 
+    <a href="https://biancafsilva.github.io/TCC-Jobei/#"> Contato </a>
 </h5>
 
 ---
