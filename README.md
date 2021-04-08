@@ -1,5 +1,5 @@
-<p align="center"> <img width="13%" src="https://user-images.githubusercontent.com/60801421/110820079-876c4d00-826d-11eb-96fc-23cb4fc05436.png"></img> </p>
-<h3 align="center"> Etim 2019-2021 </h3>
+<p align="center"> <img width="13%" src="./assets/img/icons/logo.png"></img> </p>
+<h3 align="center"> Profissionais perto de você </h3>
 
 <p align="center">
     <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/BiancaFSilva/TCC">
