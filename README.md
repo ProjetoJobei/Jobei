@@ -1,4 +1,4 @@
-<p align="center"> <img width="13%" src="./assets/img/icons/logo.png"></img> </p>
+<p align="center"> <img width="15%" src="./assets/img/icons/logo.png"></img> </p>
 <h3 align="center"> Profissionais perto de você </h3>
 
 <p align="center">
