@@ -10,11 +10,11 @@
 
 ---
 
-<h5 align="center">
-    <a href="https://biancafsilva.github.io/TCC-Jobei"> Home </a> - 
-    <a href="https://biancafsilva.github.io/TCC-Jobei/#"> Sobre </a> - 
-    <a href="https://biancafsilva.github.io/TCC-Jobei/#"> Contato </a>
-</h5>
+<p align="center">    
+    <a href="https://biancafsilva.github.io/TCC-Jobei"> <b> Home </b> </a> - 
+    <a href="https://biancafsilva.github.io/TCC-Jobei/#"> <b> <b> Sobre </b> </a> - 
+    <a href="https://biancafsilva.github.io/TCC-Jobei/#"> <b> Contato </b> </a>
+</p>
 
 ---
 ## :bookmark: Sobre
@@ -25,7 +25,7 @@
 
 ---
 
-## :busts_in_silhouette: Integrantes do grupo:
+## :busts_in_silhouette: Equipe:
   <b> Ana Carolyny </b>  
     [![Github Badge](https://img.shields.io/badge/-Github-black?style=flat-square&logo=Github&logoColor=white&link=https://github.com/AnaThomazini55)](https://github.com/AnaThomazini55)
     [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/----)](https://www.linkedin.com/in/----)
@@ -51,3 +51,9 @@ Projeto desenvolvido para o Trabalho de Conclusão de Curso (TCC) do Ensino Méd
 
 ### :memo: License
 Esse projeto está sob a [Licença MIT](LICENSE).
+
+---
+@Jobei 2021
+
+[![Github Badge](https://img.shields.io/badge/-Github-black?style=flat-square&logo=Github&logoColor=white&link=https://github.com/ProjetoJobei)](https://github.com/ProjetoJobei)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:equipe.jobei@gmail.com)](mailto:equipe.jobei@gmail.com)
