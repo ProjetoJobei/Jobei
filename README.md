@@ -11,9 +11,9 @@
 ---
 
 <p align="center">    
-    <a href="https://projetojobei.github.io/TCC-Jobei/"> <b> Home </b> </a> - 
-    <a href="https://projetojobei.github.io/TCC-Jobei/#"> <b> <b> Sobre </b> </a> - 
-    <a href="https://projetojobei.github.io/TCC-Jobei/#"> <b> Contato </b> </a>
+    <a href="https://projetojobei.github.io/Jobei/"> <b> Home </b> </a> - 
+    <a href="https://projetojobei.github.io/Jobei/#sobre"> <b> <b> Sobre </b> </a> - 
+    <a href="https://projetojobei.github.io/Jobei/#"> <b> Contato </b> </a>
 </p>
 
 ---
