@@ -9,6 +9,7 @@
     if ($conexao -> connect_error) {
         echo "Erro de conexão";
     } else {
-        //echo "Conectado";
+        // Teste
+        echo "Conectado";
     }
 ?>
