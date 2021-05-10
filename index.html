@@ -50,10 +50,7 @@
     <body>
         <header class="header container-fluid">              
             <div class="header-left">
-                <div class="brand-logo">
-                    <a href="./index.html"> <img src="./assets/img/icons/logo.png" alt="Logo"> </a>
-                </div>
-                <div class="menu-icon dw dw-menu"></div>                
+                <div class="menu-icon dw dw-menu"></div> 
                 <div class="search-toggle-icon dw dw-search2" data-toggle="header_search"></div>
                 <div class="header-search">
                     <form>
@@ -64,20 +61,7 @@
                     </form>
                 </div>
             </div>
-
-            <div class="header-right">
-                <div class="user-notification">
-                    <div class="dropdown"> <a class="dropdown-toggle no-arrow" href="#" data-toggle="right-sidebar"> Sobre a Jobei </a> </div>
-                </div>
-                <div class="user-notification">
-                    <div class="dropdown"> <a class="dropdown-toggle no-arrow" href="#" data-toggle="right-sidebar"> Explore </a> </div>
-                </div>
-                <div class="user-notification">
-                    <div class="dropdown"> <a class="dropdown-toggle no-arrow link-disabled" href="#" data-toggle="right-sidebar"> Planos </a> </div>
-                </div>
-                <div class="user-notification">
-                    <div class="dropdown"> <a class="dropdown-toggle no-arrow" href="./index.html" data-toggle="right-sidebar"> Contato </a> </div>
-                </div>
+            <div class="header-right">               
                 <div class="user-notification">
                     <div class="dropdown"> <a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar"> <i class="dw dw-chat-12"></i> </a> </div>
                 </div>
@@ -87,7 +71,6 @@
                             <i class="icon-copy dw dw-notification"></i>
                             <span class="badge notification-active"></span>
                         </a>                       
-
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="notification-list mx-h-350 customscroll">
                                 <ul>
@@ -115,6 +98,38 @@
                     <div class="dropdown">
                         <a class="dropdown-toggle no-arrow" href="./login.html" data-toggle="right-sidebar"> <i class="dw dw-user1"></i> Entrar </a> 
                     </div>
+                </div>
+            </div>
+
+            <div class="right-sidebar">
+                <div class="sidebar-title">
+                    <h3 class="weight-600 font-16 text-blue"> Chat </h3>
+                    <div class="close-sidebar" data-toggle="right-sidebar-close">
+                        <i class="icon-copy ion-close-round"></i>
+                    </div>
+                </div>
+                <div class="right-sidebar-body customscroll">
+                    <div class="right-sidebar-body-content">
+                       <!-- Listar contatos frequentes -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-side-bar">
+                <div class="menu-block customscroll">
+                    <div class="sidebar-menu">
+                        <ul id="accordion-menu">
+                            <li class="dropdown">
+                                <a href="javascript:;" class="dropdown-toggle"> <img class="w-50" src="./assets/img/icons/logo.png" alt="Logo Jobei"> </a>
+                                <ul class="submenu">
+                                    <li> <a href="./index.html#"> Sobre a Jobei </a> </li>
+                                    <li> <a href="./index.html#"> Explore </a> </li>
+                                    <li> <a href="./index.html#"> Planos </a> </li>
+                                    <li> <a href="./index.html#"> Contato </a> </li>
+                                </ul>
+                            </li>        
+                        </ul>
+                    </div>                    
                 </div>
             </div>
             <div class="mobile-menu-overlay"></div>
