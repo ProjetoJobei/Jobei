@@ -12,12 +12,15 @@
 
 <p align="center">    
     <a href="http://jobei.atwebpages.com/index.html"> <b> Home </b> </a> - 
-    <a href="http://jobei.atwebpages.com/index.html"> <b> <b> Sobre </b> </a> - 
+    <a href="http://jobei.atwebpages.com/index.html#"> <b> Sobre </b> </a> - 
+    <a href="http://jobei.atwebpages.com/index.html#"> <b> Explore </b> </a> - 
+    <a href="http://jobei.atwebpages.com/index.html#"> <b> Planos </b> </a> - 
     <a href="https://projetojobei.github.io/Jobei/#"> <b> Contato </b> </a>
 </p>
 
 ---
 ## :bookmark: Sobre
+Olá, somos a Jobei! Uma plataforma cujo objetivo é estimular o comércio e o empreendedorismo local de forma que você possa contatar os serviços de trabalhadores autônomos da sua região de forma fácil e prática.
 
 ## :rocket: Tecnologias 
 
