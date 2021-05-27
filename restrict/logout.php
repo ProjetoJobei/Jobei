@@ -1,10 +1,13 @@
 <?php 
-    include '../conecta.php';
     session_start();
 
     unset(
-        $_SESSION['']
+        $_SESSION['id'],
+		$_SESSION['nome'],
+		$_SESSION['email'],
+		$_SESSION['senha'],
+        $_SESSION['nivel']
     );
 
-    header('Location: ./login.php');
+    header('Location: ./../login.html');
 ?>

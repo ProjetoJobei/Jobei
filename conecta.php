@@ -1,15 +1,15 @@
 <?php
-    $servidor = "localhost";
-    $banco = ""; 
+    $host = "localhost";
     $usuario = "root";
+    $banco = "jobei";     
     $senha = "";
 
-    $conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
+    $conexao = mysqli_connect($host, $usuario, $senha, $banco);
 
     if ($conexao -> connect_error) {
         echo "Erro de conexão";
     } else {
-        // Teste
-        echo "Conectado";
+        /* Teste
+        echo "Conectado"; */
     }
 ?>

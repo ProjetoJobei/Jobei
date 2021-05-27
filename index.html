@@ -4,7 +4,7 @@
         <title> Jobei </title>
         <meta charset="UTF-8">
         <meta name="descriptison" content="A rede social que te conecta ao trabalho de autônomos da sua região">
-        <meta name="keywords" content="Jobei, autônomos, autônomo, trabalho, região">
+        <meta name="keywords" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">         
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="True">
@@ -50,7 +50,10 @@
     <body>
         <header class="header container-fluid">              
             <div class="header-left">
-                <div class="menu-icon dw dw-menu"></div> 
+                <div class="brand-logo">
+                    <a href="./index.html"> <img src="./assets/img/icons/logo.png" alt="Logo"> </a>
+                </div>
+                <div class="menu-icon dw dw-menu"></div>                
                 <div class="search-toggle-icon dw dw-search2" data-toggle="header_search"></div>
                 <div class="header-search">
                     <form>
@@ -61,7 +64,20 @@
                     </form>
                 </div>
             </div>
-            <div class="header-right">               
+
+            <div class="header-right">
+                <div class="user-notification">
+                    <div class="dropdown"> <a class="dropdown-toggle no-arrow" href="./index.html#sobre" data-toggle="right-sidebar"> Sobre a Jobei </a> </div>
+                </div>
+                <div class="user-notification">
+                    <div class="dropdown"> <a class="dropdown-toggle no-arrow" href="./index.html#explore" data-toggle="right-sidebar"> Explore </a> </div>
+                </div>
+                <div class="user-notification">
+                    <div class="dropdown"> <a class="dropdown-toggle no-arrow link-disabled" href="./index.html#planos" data-toggle="right-sidebar"> Planos </a> </div>
+                </div>
+                <div class="user-notification">
+                    <div class="dropdown"> <a class="dropdown-toggle no-arrow" href="./index.html#contato" data-toggle="right-sidebar"> Contato </a> </div>
+                </div>
                 <div class="user-notification">
                     <div class="dropdown"> <a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar"> <i class="dw dw-chat-12"></i> </a> </div>
                 </div>
@@ -71,6 +87,7 @@
                             <i class="icon-copy dw dw-notification"></i>
                             <span class="badge notification-active"></span>
                         </a>                       
+
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="notification-list mx-h-350 customscroll">
                                 <ul>
@@ -98,38 +115,6 @@
                     <div class="dropdown">
                         <a class="dropdown-toggle no-arrow" href="./login.html" data-toggle="right-sidebar"> <i class="dw dw-user1"></i> Entrar </a> 
                     </div>
-                </div>
-            </div>
-
-            <div class="right-sidebar">
-                <div class="sidebar-title">
-                    <h3 class="weight-600 font-16 text-blue"> Chat </h3>
-                    <div class="close-sidebar" data-toggle="right-sidebar-close">
-                        <i class="icon-copy ion-close-round"></i>
-                    </div>
-                </div>
-                <div class="right-sidebar-body customscroll">
-                    <div class="right-sidebar-body-content">
-                       <!-- Listar contatos frequentes -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="left-side-bar">
-                <div class="menu-block customscroll">
-                    <div class="sidebar-menu">
-                        <ul id="accordion-menu">
-                            <li class="dropdown">
-                                <a href="javascript:;" class="dropdown-toggle"> <img class="w-50 center" src="./assets/img/icons/logo.png" alt="Logo Jobei"> </a>
-                                <ul class="submenu">
-                                    <li> <a href="./index.html#"> Sobre a Jobei </a> </li>
-                                    <li> <a href="./index.html#"> Explore </a> </li>
-                                    <li> <a href="./index.html#"> Planos </a> </li>
-                                    <li> <a href="./index.html#"> Contato </a> </li>
-                                </ul>
-                            </li>        
-                        </ul>
-                    </div>                    
                 </div>
             </div>
             <div class="mobile-menu-overlay"></div>
@@ -163,7 +148,7 @@
 
             <section id="sobre" style="background-color: #fff;">
                 <div class="container">
-                    <h2>Sobre a Jobei</h2>
+                    <h2> Sobre a Jobei</h2>
                     <div class="texto">
                         <p> Olá, somos a Jobei! </p>
                         <p> Nosso objetivo é estimular o comércio local e os empreendedores do grande ABC; oferecendo uma plataforma onde se possa encontrar, de forma fácil e prática, serviços e clientes. </p>
@@ -172,8 +157,98 @@
                 <div class="container"> </div>
             </section>
 
-            <section id="">
+            <section id="explore"  style="background-color: #fff;">
                 <div class="container"> </div>
+            </section>
+
+            <section id="planos">                           
+                <div class="container">
+                    <h2>Planos</h2>
+                    <div class="pd-ltr-20 xs-pd-20-10">
+                        <div class="min-height-200px">
+                            <div class="container px-0">
+                                <div class="row">
+                                    <div class="col-md-4 mb-30">
+                                        <div class="card-box pricing-card mt-30 mb-30">
+                                            <div class="pricing-icon">
+                                                <img src="./assets/img/icons/icon-Cash.png" alt="">
+                                            </div>
+                                            <div class="price-title"> Básico </div>
+                                            <div class="pricing-price"> <sup>R$</sup>7,00<sub>/mês</sub> </div>
+                                            <div class="text">  </div>
+                                            <div class="pricing-card-style2 pricing-card-body">
+                                                <div class="pricing-points">
+                                                    <ul>
+                                                        <li> . </li>                                                       
+                                                        <li> . </li>
+                                                        <li> . </li>                                                       
+                                                        <li> . </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="cta">
+                                                <a href="#" class="btn btn-primary btn-rounded btn-lg"> Assine agora </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-30">
+                                        <div class="card-box pricing-card mt-30 mb-30">
+                                            <div class="pricing-icon">
+                                                <img src="./assets/img/icons/icon-debit.png" alt="">
+                                            </div>
+                                            <div class="price-title"> Premium </div>
+                                            <div class="pricing-price"> <sup>R$</sup>15,00<sub>/mês</sub> </div>
+                                            <div class="text"> Teste grátis por 1 mês </div>
+                                            <div class="pricing-card-style2 pricing-card-body">
+                                                <div class="pricing-points">
+                                                    <ul>
+                                                        <li> . </li>                                                       
+                                                        <li> . </li>
+                                                        <li> . </li>                                                       
+                                                        <li> . </li>
+                                                        <li> . </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="cta">
+                                                <a href="#" class="btn btn-primary btn-rounded btn-lg"> Assine agora </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-30">
+                                        <div class="card-box pricing-card mt-30 mb-30">
+                                            <div class="pricing-icon">
+                                                <img src="./assets/img/icons/icon-online-wallet.png" alt="">
+                                            </div>
+                                            <div class="price-title"> Premium Anual </div>
+                                            <div class="pricing-price"> <sup>R$</sup>160,00<sub>/ano</sub> </div>
+                                            <div class="text">  </div>
+                                            <div class="pricing-card-style2 pricing-card-body">
+                                                <div class="pricing-points">
+                                                    <ul>
+                                                        <li> . </li>                                                       
+                                                        <li> . </li>
+                                                        <li> . </li>                                                       
+                                                        <li> . </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="cta">
+                                                <a href="#" class="btn btn-primary btn-rounded btn-lg"> Assine agora </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato">
+                <div class="container"> 
+                    <h2>Contato</h2>
+                </div>
             </section>
         </main>
 

@@ -1,8 +1,3 @@
-<?php
-	include './conecta.php';
-	session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -72,17 +67,17 @@
 					<div class="col-md-6 col-lg-5">
 						<div class="login-box bg-white box-shadow border-radius-10">
 							<div class="login-title"> <h2 class="text-center text-primary"> Entrar </h2> </div>
-							<form>
+							<form action="./retrict/login.php" method="post">
 								<div class="select-role">
 									<div class="btn-group btn-group-toggle" data-toggle="buttons">
 										<label class="btn active">
-											<input type="radio" name="options" id="admin">
-											<div class="icon"> <img src="./assets/img/briefcase.svg" class="svg" alt=""> </div>
+											<input type="radio" name="options" id="user">
+											<div class="icon"> <img src="./assets/img/briefcase.svg" class="svg"> </div>
 											<span> Sou </span> Autônomo
 										</label>
 										<label class="btn">
-											<input type="radio" name="options" id="user">
-											<div class="icon"> <img src="./assets/img/person.svg" class="svg" alt=""> </div>
+											<input type="radio" name="options" id="admin">
+											<div class="icon"> <img src="./assets/img/person.svg" class="svg"> </div>
 											<span> Sou </span> Admin
 										</label>
 									</div>
