@@ -1,5 +1,5 @@
 <?php    
-    include '../conecta.php';
+    include './../conecta.php';
     session_start();
 
     $email = $_POST['email'];
@@ -12,11 +12,11 @@
     $registro_usuario = mysqli_fetch_assoc($resultado);
 
     if ($registros == 1) {
-        $_SESSION['id'] = $registro_usuario['id'];
+        $_SESSION['user_id'] = $registro_usuario['user_id'];
         $_SESSION['nome'] = $registro_usuario['nome'];
         $_SESSION['email'] = $registro_usuario['email'];
         $_SESSION['senha'] = $registro_usuario['senha'];
-        $_SESSION['nivel'] = $registro_usuario['nivel']; //Comum ou administrativo
+        $_SESSION['nivel'] = $registro_usuario['nivel']; 
 
         header('Location: ./restrita.php');
     } else {

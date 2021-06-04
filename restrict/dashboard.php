@@ -96,7 +96,7 @@
                     <div class="dropdown">
                         <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
                             <span class="user-icon"> <i class="dw dw-user1"></i> </span>
-                            <span class="user-name"> Admin </span>
+                            <span class="user-name"> <?php echo $_SESSION['nome']; ?> </span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
                             <a class="dropdown-item" href="./"> <i class="dw dw-user1"></i> Perfil </a> 
