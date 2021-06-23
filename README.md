@@ -48,7 +48,7 @@ Uma plataforma cujo objetivo é estimular o comércio e o empreendedorismo local
     
   <b> Isabelle Damacena </b>   
     [![Github Badge](https://img.shields.io/badge/-Github-black?style=flat-square&logo=Github&logoColor=white&link=https://github.com/IsabelleDamacena)](https://github.com/IsabelleDamacena)
-    [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=   )](https://www.linkedin.com/in/  )
+    [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/isabelle-damacena-3748471b0)](https://www.linkedin.com/in/isabelle-damacena-3748471b0)
     [![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:damacenaisabelle@gmail.com)](mailto:damacenaisabelle@gmail.com)
   
 ## :mortar_board: Créditos
