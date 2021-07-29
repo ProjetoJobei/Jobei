@@ -50,19 +50,10 @@
     <body>
         <header class="header container-fluid">              
             <div class="header-left">
+                <div class="menu-icon dw dw-menu"></div>   
                 <div class="brand-logo">
                     <a href="./index.html"> <img src="./assets/img/icons/logo-secundario.png" alt="Logo"> </a>
-                </div>
-                <div class="menu-icon dw dw-menu"></div>                
-                <div class="search-toggle-icon dw dw-search2" data-toggle="header_search"></div>
-                <div class="header-search">
-                    <form>
-                        <div class="form-group mb-0">
-                            <i class="dw dw-search2 search-icon"></i>
-                            <input type="text" class="form-control search-input" placeholder="Pesquisar">
-                        </div>
-                    </form>
-                </div>
+                </div>             
             </div>
 
             <div class="header-right">
@@ -77,9 +68,6 @@
                 </div>
                 <div class="user-notification">
                     <div class="dropdown"> <a class="dropdown-toggle no-arrow" href="./index.html#contato" data-toggle="right-sidebar"> Contato </a> </div>
-                </div>
-                <div class="user-notification">
-                    <div class="dropdown"> <a class="dropdown-toggle no-arrow" href="javascript:;" data-toggle="right-sidebar"> <i class="dw dw-chat-12"></i> </a> </div>
                 </div>
                 <div class="user-notification">
                     <div class="dropdown">                     
@@ -117,27 +105,37 @@
                 </div>
             </div>
 
+            <!-- 
+            <div class="left-side-bar">
+                <div class="brand-logo">
+                    <a href="index.html"> <img src="./assets/img/icons/logo-secundario.png" alt="Logo secundária Jobei"> </a>
+                    <div class="close-sidebar" data-toggle="left-sidebar-close">
+                        <i class="ion-close-round"></i>
+                    </div>
+                </div>
+                <div class="menu-block customscroll">
+                    <div class="sidebar-menu">
+                        <ul id="accordion-menu">                            
+                            <li> <a href="./index.html#sobre" class="dropdown-toggle no-arrow"> <span class="mtext"> Sobre a Jobei </span> </a> </li>   
+                            <li> <a href="./index.html#explore" class="dropdown-toggle no-arrow"> </span><span class="mtext"> Explore </span> </a> </li>
+                            <li> <a href="./index.html#planos" class="dropdown-toggle no-arrow"> <span class="mtext"> Planos </span> </a> </li>
+                            <li> <a href="./index.html#contato" class="dropdown-toggle no-arrow"> <span class="mtext"> Contato </span> </a> </li>                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            -->
+
             <div class="mobile-menu-overlay"></div>
         </header>
 
         <main>           
             <section id="hero" >
-                <div class="container d-flex flex-column" style="min-height: 52rem; position: relative; z-index: 0;">
+                <div class="container d-flex flex-column" style="min-height: 50rem; position: relative; z-index: 0;">
                     <div class="row my-auto">
-                        <div class="col-lg-5 col-md-12 col-sm-12 pt-16 pt-lg-6 my-auto aos-init aos-animate" data-aos="fade">
-                            <h1 class="display-3 mb-3"> Profissionais <br> Perto de você </h1>
-                            <p class="lead mb-4"> A rede social que te conecta ao trabalho de autônomos da sua região </p>
-                            <div class="input-group mb-3">
-                                <input class="form-control rounded mx-0" type="text" placeholder="Email" aria-label="Email">
-                                <input class="form-control rounded mx-1" type="password" placeholder="Senha" aria-label="Password">
-                                <button class="btn btn-secondary" type="button"> Entrar </button>
-                            </div>
-                            <div class="form-check mb-4">
-                                <input class="form-check-input mr-2" type="checkbox" value="" id="checkbox1">
-                                <label class="form-check-label small text-muted" for="checkbox1">
-                                    <p> Concordo com os Termos da <a href="#">Política de Privacidade</a> </p>
-                                </label>
-                            </div>                            
+                        <div class="col-lg-5 col-md-12 col-sm-11  my-auto aos-init aos-animate" data-aos="fade">
+                            <h1 class="display-4 mb-3"> Profissionais <br> Perto de você </h1>
+                            <p class="lead mb-4"> A rede social que te conecta ao trabalho de autônomos da sua região </p>                                                     
                         </div>
                         <div class="col-lg-7 col-md-12 col-sm-12 ml-auto my-auto aos-init aos-animate" data-aos="fade-left">
                             <img src="./assets/img/hiring.png" alt="">
@@ -166,7 +164,7 @@
                             <br>
                             <div class="contact-directory-list">
                                 <ul class="row">
-                                    <li class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                                    <li class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
                                         <div class="contact-directory-box">
                                             <div class="contact-dire-info text-center">
                                                 <div class="contact-avatar">
@@ -184,11 +182,11 @@
                                                 </div>
                                             </div>
                                             <div class="view-contact">
-                                                <a href="#"> LinkdIn </a>
+                                                <a href="#" target="_blank"> LinkedIn </a>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                                    <li class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
                                         <div class="contact-directory-box">
                                             <div class="contact-dire-info text-center">
                                                 <div class="contact-avatar">
@@ -206,11 +204,11 @@
                                                 </div>
                                             </div>
                                             <div class="view-contact">
-                                                <a href="https://www.linkedin.com/in/biancafsilva"> LinkedIn </a>
+                                                <a href="https://www.linkedin.com/in/biancafsilva" target="_blank"> LinkedIn </a>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                                    <li class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
                                         <div class="contact-directory-box">
                                             <div class="contact-dire-info text-center">
                                                 <div class="contact-avatar">
@@ -228,11 +226,11 @@
                                                 </div>
                                             </div>
                                             <div class="view-contact">
-                                                <a href="https://www.linkedin.com/in/emanuela-de-almeida-silva-9920581a4"> LinkedIn </a>
+                                                <a href="https://www.linkedin.com/in/emanuela-de-almeida-silva-9920581a4" target="_blank"> LinkedIn </a>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                                    <li class="col-xl-3 col-lg-3 col-md-6 col-sm-10">
                                         <div class="contact-directory-box">
                                             <div class="contact-dire-info text-center">
                                                 <div class="contact-avatar">
@@ -250,7 +248,7 @@
                                                 </div>
                                             </div>
                                             <div class="view-contact">
-                                                <a href="https://www.linkedin.com/in/isabelle-damacena-3748471b0"> LinkedIn </a>
+                                                <a href="https://www.linkedin.com/in/isabelle-damacena-3748471b0" target="_blank"> LinkedIn </a>
                                             </div>
                                         </div>
                                     </li>                                    
@@ -413,7 +411,7 @@
                                                 <img src="./assets/img/icons/icon-Cash.png" alt="">
                                             </div>
                                             <div class="price-title"> Mensal </div>
-                                            <div class="pricing-price"> <sup>R$</sup>7,00<sub>/mês</sub> </div>
+                                            <div class="pricing-price"> <sup>R$</sup>7,00 </div>
                                             <div class="text"> Grátis por 30 dias </div>
                                             <div class="pricing-card-style2 pricing-card-body">
                                                 <div class="pricing-points">
@@ -438,7 +436,7 @@
                                                 <img src="./assets/img/icons/icon-debit.png" alt="">
                                             </div>
                                             <div class="price-title"> Trimestral </div>
-                                            <div class="pricing-price"> <sup>R$</sup>15,00<sub>/mês</sub> </div>
+                                            <div class="pricing-price"> <sup>R$</sup>15,00 </div>
                                             <div class="text"> Grátis por 30 dias </div>
                                             <div class="pricing-card-style2 pricing-card-body">
                                                 <div class="pricing-points">
@@ -463,7 +461,7 @@
                                                 <img src="./assets/img/icons/icon-online-wallet.png" alt="">
                                             </div>
                                             <div class="price-title"> Premium Anual </div>
-                                            <div class="pricing-price"> <sup>R$</sup>160,00<sub>/ano</sub> </div>
+                                            <div class="pricing-price"> <sup>R$</sup>160,00 </div>
                                             <div class="text"> Grátis por 30 dias </div>
                                             <div class="pricing-card-style2 pricing-card-body">
                                                 <div class="pricing-points">
@@ -511,18 +509,18 @@
                                 <div class="profile-social">
                                     <h5 class="mb-20"> Redes Sociais </h5>
                                     <div class="row"  style="justify-content: center;">
-                                        <p> <a href="#" class="btn" data-bgcolor="#3b5998" data-color="#ffffff"><i class="fa fa-facebook"></i></a> </p> 
+                                        <p> <a href="https://www.facebook.com/" target="_blank" class="btn" data-bgcolor="#3b5998" data-color="#ffffff"><i class="fa fa-facebook"></i></a> </p> 
                                         <p style="color:#a7d9da;">...</p>
-                                        <p> <a href="#" class="btn" data-bgcolor="#f46f30" data-color="#ffffff"><i class="fa fa-instagram"></i></a> </p> 
+                                        <p> <a href="https://www.instagram.com/" target="_blank" class="btn" data-bgcolor="#f46f30" data-color="#ffffff"><i class="fa fa-instagram"></i></a> </p> 
                                         <p style="color:#a7d9da;">...</p>
-                                        <p> <a href="#" class="btn" data-bgcolor="#1da1f2" data-color="#ffffff"><i class="fa fa-twitter"></i></a> </p>                                   
+                                        <p> <a href="https://twitter.com/" target="_blank" class="btn" data-bgcolor="#1da1f2" data-color="#ffffff"><i class="fa fa-twitter"></i></a> </p>                                   
                                     </div>
                                 </div> 
                             </div>
                         </div>    
                         <div class="col-md-1 col-sm-12"> </div>                    
                         <div class="col-md-7 col-sm-12">                 
-                            <form action="" method="POST">
+                            <form action="./restrict/email.php" method="POST">
                                 <div class="row">
                                     <div class="col-md-6 col-sm-12">
                                         <div class="form-group"> <input class="form-control" type="text" placeholder="Seu nome"> </div>

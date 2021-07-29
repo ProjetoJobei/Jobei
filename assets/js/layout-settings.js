@@ -64,7 +64,6 @@
 		var body = jQuery('body');
 		var left_sidebar = jQuery('.left-side-bar');
 
-
 		// Header Background
 		var header_dark = jQuery('.header-dark');
 		var header_light = jQuery('.header-white');

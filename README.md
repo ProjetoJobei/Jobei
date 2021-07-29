@@ -24,9 +24,10 @@ Olá, somos a Jobei!
 
 Uma plataforma cujo objetivo é estimular o comércio e o empreendedorismo local de forma que você possa contatar os serviços de trabalhadores autônomos da sua região de forma fácil e prática.
 
+<!-- 
 ## :rocket: Tecnologias 
-
 ## :zap: Como usar 
+-->
 
 ---
 
