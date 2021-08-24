@@ -383,7 +383,7 @@ body.IE .login-wrap .container,body.IE .register-page-wrap .container{padding-to
 .register-page-wrap{height:calc(100% - 70px);padding:30px 0}
 .register-page-wrap .register-box{max-width:410px;margin:0 auto}
 .register-page-wrap,.register-page-wrap .wizard-content .wizard{position:relative;overflow:auto}
-register-page-wrap .wizard-content .wizard .steps{position:relative}
+.register-page-wrap .wizard-content .wizard .steps{position:relative}
 .register-page-wrap .wizard-content .wizard>.steps .step{position:relative;top:0;left:0;display:block;margin:0 auto;border-width:2px;background-color:#fff;border-color:rgba(24,31,72,.3)}
 .register-page-wrap .wizard-content .wizard>.steps>ul>li.done>a .step{background:url(../images/tick.svg) no-repeat #ecf0f4;font-size:0;background-size:22px;background-position:center center;border-color:rgba(24,31,72,.3)}
 .register-page-wrap .wizard-content .wizard.wizard-circle>.steps>ul>li:after,.register-page-wrap .wizard-content .wizard.wizard-circle>.steps>ul>li:before,.wizard-content .wizard.wizard-circle>.steps>ul>li.current~li:after,.wizard-content .wizard.wizard-circle>.steps>ul>li.current~li:before{background:rgba(24,31,72,.3)}
