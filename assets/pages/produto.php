@@ -157,22 +157,25 @@
                                             <h5 class="pd-20 h5 mb-0"> Recentes </h5>
                                             <div class="latest-post">
                                                 <ul>
-                                                    <li>
-                                                        <h4><a href="./ex_produto1.html"> Escrivaninhas Personalizadas </a></h4>
-                                                        <span>Autor</span>
-                                                    </li>                                                    
-                                                    <li>
-                                                        <h4><a href="./ex_produto2.html"> Luz de Leitura </a></h4>
-                                                        <span>Autor</span>
-                                                    </li>
-                                                    <li>
-                                                        <h4><a href="./ex_produto3.html"> Planner </a></h4>
-                                                        <span>Autor</span>
-                                                    </li>
-                                                    <li>
-                                                        <h4><a href="#"> Guarda-chuva </a></h4>
-                                                        <span>Autor</span>
-                                                    </li>   
+                                                    <?php
+                                                        // $consulta = "SELECT * FROM tabela_produto ORDER BY valor";
+                                                        foreach ($conexao -> query($consulta) as $linha) {
+                                                            echo "<li>";
+                                                                echo "<h4> ".
+                                                    ?>
+                                                        <a href="./produto.php?codProduto=<?php 
+                                                            // Mostra o 'endereço'
+                                                            echo $linha['codProduto']; 
+                                                        ?>"></a>
+                                                    <?             
+                                                                // mMstra o nome do produto recente                                                 
+                                                                .$linha['titulo_do_produto']."</h4>";
+                                                                
+                                                                // Mostra o autor
+                                                                echo "<span>".$linha['autor_do_produto']."</span>";
+                                                            echo "</li>";
+                                                        }
+                                                    ?>                                         
                                                 </ul>
                                             </div>
                                         </div>                                            
