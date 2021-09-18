@@ -6,6 +6,6 @@
 	(!isset($_SESSION['senha'])== true) && (!isset($_SESSION['nivel'])== true)) { 
 		header('Location: ./dashboard.php'); 
 	} else { 
-		header('Location: ./../login.html'); 
+		//header('Location: ./../login.html'); 
 	}
 ?>

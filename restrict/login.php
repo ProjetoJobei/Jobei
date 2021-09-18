@@ -4,8 +4,12 @@
 
     $email = $_POST['email'];
     $senha = md5($_POST['senha']);
+    $nivel = filter_input(INPUT_POST, 'nivel'); 
 
-    $consulta = "SELECT * FROM usuario WHERE email = '$email' AND senha = '$senha'";
+    /*if ($nivel == 1) { echo "Usuário comum";
+    } else { echo "Administrador"; }*/
+
+    $consulta = "SELECT * FROM usuario WHERE email = '$email' AND senha = '$senha' AND nivel = '$nivel'";
     
     $resultado = $conexao -> query($consulta);
     $registros = $resultado -> num_rows;
@@ -19,7 +23,7 @@
         $_SESSION['nivel'] = $registro_usuario['nivel']; 
 
         header('Location: ./restrita.php');
-    } else {
-        header('Location: ./../login.html');
+    } else {        
+        header('Location: ./../login.html');        
     }
 ?>

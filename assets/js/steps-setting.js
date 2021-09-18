@@ -27,7 +27,8 @@ $(".tab-wizard2").steps({
 	onStepChanged: function(event, currentIndex, priorIndex) {
 		$('.steps .current').prevAll().addClass('disabled');
 	},
-	onFinished: function(event, currentIndex) {
+	onFinished: function(event, currentIndex) {      
+		$('#cadastro_de_usuario').submit();
 		$('#success-modal-btn').trigger('click');
 	}
 });

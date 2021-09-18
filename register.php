@@ -1,3 +1,10 @@
+<?php 
+    include './conecta.php';
+
+    $consulta = "SELECT * FROM usuario";
+    $consulta1 = "SELECT * FROM pagamento";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -51,7 +58,7 @@
 					<div class="col-md-6 col-lg-5">
 						<div class="register-box bg-white box-shadow border-radius-10">
 							<div class="wizard-content">
-								<form class="tab-wizard2 wizard-circle wizard">
+								<form action="./restrict/cadastro.php" method="post" id="cadastro_de_usuario" class="tab-wizard2 wizard-circle wizard">
 									<h5> Informações básicas </h5>
 									<section>
 										<div class="form-wrap max-width-600 mx-auto">
@@ -176,31 +183,31 @@
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Nome completo </div>
-														<div class="col-sm-8"> Exemplo </div>
+														<div class="col-sm-8"> Exemplo <?php //echo $linha['nome_completo']; ?> </div>
 													</div>
 												</li>
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Nome de usuário </div>
-														<div class="col-sm-8"> Exemplo </div>
+														<div class="col-sm-8"> Ex <?php //echo $linha['nome']; ?> </div>
 													</div>
 												</li>
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Email </div>
-														<div class="col-sm-8"> exemplo@abc.com </div>
+														<div class="col-sm-8"> exemplo@abc.com <?php //echo $linha['email']; ?> </div>
 													</div>
 												</li>
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Pagamento </div>
-														<div class="col-sm-8"> Débito .....000 </div>
+														<div class="col-sm-8"> Débito <?php //echo $linha['tipo_pagamento']; ?> .....000 </div>
 													</div>
 												</li>												
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Localização </div>
-														<div class="col-sm-8"> Cidade - Estado </div>
+														<div class="col-sm-8"> Cidade <?php //echo $linha['cidade']; ?> - Estado <?php //echo $linha['estado']; ?> </div>
 													</div>
 												</li>
 											</ul>
@@ -240,5 +247,6 @@
 		<script src="./assets/js/layout-settings.js"></script>
 		<script src="./assets/plugins/jquery-steps/jquery.steps.js"></script>
 		<script src="./assets/js/steps-setting.js"></script>
+		<script src="./assets/js/main.js"></script>
 	</body>
 </html>

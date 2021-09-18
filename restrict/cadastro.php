@@ -21,7 +21,6 @@
     // Termos de serviço e políticas de privacidade
     $termos = $_POST['termos'];
 
-
     $consulta = "INSERT INTO usuario (nome, nome_completo, email, senha, genero, cidade, estado, nivel) VALUES ('$nome', '$nome_completo', '$email', '$senha', '$genero', '$cidade', '$estado','$nivel')";
     $consulta = "INSERT INTO pagamento (tipo_pagamento, numero_cartao, cvc, mes_expira, ano_expira) VALUES ('$pagamento', '$cartao', '$cvc', '$mes_expira', '$ano_expira')";
     $conexao -> query($consulta);

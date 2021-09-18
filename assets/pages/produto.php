@@ -1,4 +1,8 @@
-<?php include './../../conecta.php'; ?>
+<?php 
+    include './../../conecta.php'; 
+    $consulta = "SELECT * FROM produto";
+    $consulta1 = "SELECT * FROM produto WHERE cod_produto = 1";
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -117,10 +121,10 @@
                         <div class="page-header">
                             <div class="row">
                                 <div class="col-md-12 col-sm-12">
-                                    <div class="title"> <h4> <?php //titulo do produto ?> </h4> </div>
+                                    <div class="title"> <h4> <?php echo $linha['nome_produto']; ?> </h4> </div>
                                     <nav aria-label="breadcrumb" role="navigation">
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a href="#"> <?php //autor do produto ?> </a></li>
+                                            <li class="breadcrumb-item"><a href="#"> <?php echo $linha['autor']; ?> </a></li>
                                             <li class="breadcrumb-item active" aria-current="page"> Detalhes do Produto </li>
                                         </ol>
                                     </nav>
@@ -133,21 +137,27 @@
                                     <div class="col-md-9 col-sm-12">
                                         <div class="blog-detail card-box overflow-hidden mb-30">
                                             <div class="blog-img">
-                                                <?php //imagem do produto ?> 
+                                                <!-- ?php echo $linha['midia_produto']; ?> -->
                                                 <img src="./../img/product-img4.jpg" alt="">
                                                 <p><small> Imagem meramente ilustrativa </small></p>
                                             </div>
                                             <div class="blog-caption">
-                                                <h4 class="mb-10"> <?php //titulo do produto ?> </h4>                                                    
-                                                <p>  <?php //descrição do produto ?>  </p>
+                                                <h4 class="mb-10"> <?php echo $linha['nome_produto']; ?> </h4>                                                    
+                                                <p>  <?php echo $linha['descricao_produto']; ?>  </p>
                                                 
                                                 <h5 class="mb-10"> ESPECIFICAÇÕES TÉCNICAS </h5>        
-                                                <p>  <?php //lista de especificações do produto ?>  </p>
+                                                <p>  <?php echo $linha['especificacoes'];?>  </p>
                                                     
                                                 <h5 class="mb-10"> ITENS INCLUSOS </h5>
                                                 <ul>
-                                                    <li> <?php //lista de itens do produto ?> </li>
-                                                </ul>                                                  
+                                                    <li> <?php echo $linha['itens_inclusos']; ?> </li>
+                                                </ul>  
+                                                <br>
+
+                                                <div class="alert alert-danger" role="alert">
+                                                    <h4 class="alert-heading h4"> Atenção </h4>
+                                                    <p> <?php echo $linha['aviso']; ?> </p>
+                                                </div>                                                   
                                             </div>
                                         </div>
                                     </div>
@@ -155,29 +165,22 @@
                                     <div class="col-md-3 col-sm-12">                                            
                                         <div class="card-box mb-30">
                                             <h5 class="pd-20 h5 mb-0"> Recentes </h5>
+                                            
                                             <div class="latest-post">
+                                            <a href="produto.php?codProduto=<?php echo $linha['cod_produto']; ?>"> 
                                                 <ul>
                                                     <?php
-                                                        // $consulta = "SELECT * FROM tabela_produto ORDER BY valor";
+                                                        $consulta = "SELECT * FROM produto ORDER BY data_publicacao DESC";
                                                         foreach ($conexao -> query($consulta) as $linha) {
                                                             echo "<li>";
-                                                                echo "<h4> ".
-                                                    ?>
-                                                        <a href="./produto.php?codProduto=<?php 
-                                                            // Mostra o 'endereço'
-                                                            echo $linha['codProduto']; 
-                                                        ?>"></a>
-                                                    <?             
-                                                                // mMstra o nome do produto recente                                                 
-                                                                .$linha['titulo_do_produto']."</h4>";
-                                                                
-                                                                // Mostra o autor
-                                                                echo "<span>".$linha['autor_do_produto']."</span>";
+                                                                echo "<h4> ".$linha['nome_produto']."</h4>";
+                                                                echo "<span>".$linha['autor']." | ".$linha['data_publicacao']."</span>";
                                                             echo "</li>";
                                                         }
                                                     ?>                                         
-                                                </ul>
+                                                </ul> </a>
                                             </div>
+                                            
                                         </div>                                            
                                     </div>
                                 </div>
