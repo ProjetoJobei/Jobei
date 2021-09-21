@@ -1,5 +1,6 @@
 <?php 
     include './conecta.php';
+	session_start();
 
     $consulta = "SELECT * FROM usuario";
     $consulta1 = "SELECT * FROM pagamento";
@@ -183,31 +184,31 @@
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Nome completo </div>
-														<div class="col-sm-8"> Exemplo <?php //echo $linha['nome_completo']; ?> </div>
+														<div class="col-sm-8"> Exemplo <?php echo $_GET['nome_completo']; ?> </div>
 													</div>
 												</li>
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Nome de usuário </div>
-														<div class="col-sm-8"> Ex <?php //echo $linha['nome']; ?> </div>
+														<div class="col-sm-8"> Ex <?php echo $_POST['nome']; ?> </div>
 													</div>
 												</li>
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Email </div>
-														<div class="col-sm-8"> exemplo@abc.com <?php //echo $linha['email']; ?> </div>
+														<div class="col-sm-8"> exemplo@abc.com <?php $linha['email']; ?> </div>
 													</div>
 												</li>
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Pagamento </div>
-														<div class="col-sm-8"> Débito <?php //echo $linha['tipo_pagamento']; ?> .....000 </div>
+														<div class="col-sm-8"> Débito <?php $linha['tipo_pagamento']; ?> .....000 </div>
 													</div>
 												</li>												
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Localização </div>
-														<div class="col-sm-8"> Cidade <?php //echo $linha['cidade']; ?> - Estado <?php //echo $linha['estado']; ?> </div>
+														<div class="col-sm-8"> Cidade <?php $linha['cidade']; ?> - Estado <?php $linha['estado']; ?> </div>
 													</div>
 												</li>
 											</ul>

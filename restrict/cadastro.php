@@ -21,9 +21,11 @@
     // Termos de serviço e políticas de privacidade
     $termos = $_POST['termos'];
 
-    $consulta = "INSERT INTO usuario (nome, nome_completo, email, senha, genero, cidade, estado, nivel) VALUES ('$nome', '$nome_completo', '$email', '$senha', '$genero', '$cidade', '$estado','$nivel')";
-    $consulta = "INSERT INTO pagamento (tipo_pagamento, numero_cartao, cvc, mes_expira, ano_expira) VALUES ('$pagamento', '$cartao', '$cvc', '$mes_expira', '$ano_expira')";
+    $consulta = "INSERT INTO `usuario` (user_id, nome, nome_completo, email, senha, genero, cidade, estado, nivel) VALUES (NULL, '$nome', '$nome_completo', '$email', '$senha', '$genero', '$cidade', '$estado','$nivel')";
+    $consulta = "INSERT INTO `pagamento` (tipo_pagamento, numero_cartao, cvc, mes_expira, ano_expira) VALUES ('$pagamento', '$cartao', '$cvc', '$mes_expira', '$ano_expira')";
     $conexao -> query($consulta);
+
+    //! INSERT INTO `usuario` (`user_id`, `nome`, `email`, `senha`, `nivel`, `nome_completo`, `genero`, `cidade`, `estado`) VALUES (NULL, '', '', '', '', '', '', NULL, NULL)
 
     header('Location: ./../login.html');
 ?>

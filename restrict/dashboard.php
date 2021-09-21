@@ -35,6 +35,8 @@
         <!-- Files -->
         <link rel="stylesheet" type="text/css" href="./../assets/css/core.css">
         <link rel="stylesheet" type="text/css" href="./../assets/css/icon-font.min.css">
+        <link rel="stylesheet" type="text/css" href="./../assets/plugins/datatables/css/dataTables.bootstrap4.min.css">
+	    <link rel="stylesheet" type="text/css" href="./../assets/plugins/datatables/css/responsive.bootstrap4.min.css">
         <link rel="stylesheet" type="text/css" href="./../assets/css/style.css">
         
         <!-- Google Font -->
@@ -135,7 +137,7 @@
             </div>
             <div class="menu-block customscroll">
                 <div class="sidebar-menu">
-                    <ul id="accordion-menu">
+                    <ul id="accordion-menu">                        
                         <li class="dropdown">
                             <a href="javascript:;" class="dropdown-toggle">
                                 <span class="micon dw dw-house-1"></span><span class="mtext"> Jobei </span>
@@ -146,12 +148,7 @@
                                 <li><a href="#"> Planos </a></li>
                                 <li><a href="#"> Contato </a></li>
                             </ul>
-                        </li>				
-                        <li>
-                            <a href="#" class="dropdown-toggle no-arrow">
-                                <span class="micon dw dw-diagonal-arrow-81"></span><span class="mtext"> Explore </span>   
-                            </a>
-                        </li>				
+                        </li>			
                         <li class="dropdown">
                             <a href="javascript:;" class="dropdown-toggle">
                                 <span class="micon dw dw-suitcase-11"></span><span class="mtext"> Meus Produtos </span>  
@@ -171,7 +168,12 @@
                                 </li>
                                 <li><a href="javascript:;"> -- </a></li>
                             </ul>
-                        </li>					
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle no-arrow">
+                                <span class="micon dw dw-diagonal-arrow-81"></span><span class="mtext"> Explore </span>   
+                            </a>
+                        </li>						
                         <li>
                             <a href="javascript:;" class="dropdown-toggle no-arrow" data-toggle="right-sidebar">
                                 <span class="micon dw dw-chat3"></span><span class="mtext"> Chat </span>
@@ -185,263 +187,224 @@
 
 
         <main>  
-            <section id="explore">
-                <div class="main-container" style="position: relative; z-index: 0;" >
-                    <h1> Página em desenvolvimento </h1>
-                </div>
-                <div class="container"> 
-                    <br><br>
-                    <div class="product-wrap">
-                        <div class="product-list">
-                            <ul class="row">
-                                <li class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="product-box">
-                                        <div class="producct-img"><img src="./../assets/img/product-img4.jpg" alt=""></div>
-                                        <div class="product-caption">
-                                            <h4><a href="#"> VR's de alumínio </a></h4>
-                                            <div class="price">
-                                                <del> R$55.5 </del> <ins> R$49.5 </ins>
-                                            </div>
-                                            <a href="#" class="btn btn-outline-primary"> Ver mais </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="product-box">
-                                        <div class="producct-img"><img src="./../assets/img/product-img2.jpg" alt=""></div>
-                                        <div class="product-caption">
-                                            <h4><a href="#"> Escrivaninhas personalizadas </a></h4>
-                                            <div class="price">
-                                                <del> R$75.5 </del> <ins> R$50 </ins>
-                                            </div>
-                                            <a href="#" class="btn btn-outline-primary"> Ver mais </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="product-box">
-                                        <div class="producct-img"><img src="./../assets/img/product-img3.jpg" alt=""></div>
-                                        <div class="product-caption">
-                                            <h4><a href="#"> Luz de leitura </a></h4>
-                                            <div class="price">
-                                                <ins> R$80 </ins>
-                                            </div>
-                                            <a href="#" class="btn btn-outline-primary"> Ver mais </a>
-                                        </div>
-                                    </div>
-                                </li>                                
-                            </ul>
-                        </div>                        
-                    </div>
-                    <div class="blog-wrap">
-                        <div class="container pd-0">
-                            <div class="row">
-                                <div class="col-md-8 col-sm-12">
-                                    <div class="blog-list">
-                                        <ul>
-                                            <li>
-                                                <div class="row no-gutters">
-                                                    <div class="col-lg-4 col-md-12 col-sm-12">
-                                                        <div class="blog-img">
-                                                            <img src="./../assets/img/img2.jpg" alt="" class="bg_img">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 col-md-12 col-sm-12">
-                                                        <div class="blog-caption">
-                                                            <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h4>
-                                                            <div class="blog-by">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                                                                <div class="pt-10">
-                                                                    <a href="#" class="btn btn-outline-primary"> Continuar lendo </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>                                            
-                                            <li>
-                                                <div class="row no-gutters">
-                                                    <div class="col-lg-4 col-md-12 col-sm-12">
-                                                        <div class="blog-img">
-                                                            <img src="./../assets/img/img4.jpg" alt="" class="bg_img">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 col-md-12 col-sm-12">
-                                                        <div class="blog-caption">
-                                                            <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h4>
-                                                            <div class="blog-by">
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                                                                <div class="pt-10">
-                                                                    <a href="#" class="btn btn-outline-primary"> Continuar lendo </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>                                            
-                                        </ul>                                        
-                                    </div>                                                                      
-                                </div>                                
-                                <div class="col-md-4 col-sm-12">                                    
-                                    <div class="card-box mb-30">
-                                        <h5 class="pd-20 h5 mb-0"> Recentes </h5>
-                                        <div class="latest-post">
-                                            <ul>
-                                                <li>
-                                                    <h4><a href="#">Ut enim ad minim veniam, quis nostrud exercitation ullamco</a></h4>
-                                                    <span>Vendas</span>
-                                                </li>
-                                                <li>
-                                                    <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h4>
-                                                    <span>Manutenção</span>
-                                                </li>
-                                                <li>
-                                                    <h4><a href="#">Ut enim ad minim veniam, quis nostrud exercitation ullamco</a></h4>
-                                                    <span>Programação</span>
-                                                </li>
-                                                <li>
-                                                    <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h4>
-                                                    <span>Gastronomia</span>
-                                                </li>
-                                                <li>
-                                                    <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h4>
-                                                    <span>Design</span>
-                                                </li>
-                                                <li>
-                                                    <h4><a href="#">Ut enim ad minim veniam, quis nostrud exercitation ullamco</a></h4>
-                                                    <span>Marketing</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>                                    
-                                </div>                                
+            <div class="main-container">
+                <div class="pd-ltr-20">
+                    <h1> Página em desenvolvimento </h1> <br>
+                    <div class="card-box pd-20 height-100-p mb-30">                    
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <img src="vendors/images/banner-img.png" alt="">
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="font-20 weight-500 mb-10 text-capitalize">
+                                    Seja bem-vindo <div class="weight-600 font-30 text-blue"> <?php echo $_SESSION['nome']; ?> </div>
+                                </h4>
+                                <p class="font-18 max-width-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde hic non repellendus debitis iure, doloremque assumenda. Autem modi, corrupti, nobis ea iure fugiat, veniam non quaerat mollitia animi error corporis.</p>
                             </div>
                         </div>
-                    </div>           
-                </div>                
-            </section>       
-            <!--
-            <section id="content">                
-                <div class="main-container">
-                    <div class="pd-ltr-20 xs-pd-20-10">
-                        <div class="min-height-200px">				
-                            <div class="blog-wrap">
-                                <div class="container pd-0">
-                                    <div class="row">
-                                        <div class="col-md-8 col-sm-12">
-                                            <div class="blog-detail card-box overflow-hidden mb-30">
-                                                <div class="blog-img">
-                                                    <img src="vendors/images/img2.jpg" alt="">
-                                                </div>
-                                                <div class="blog-caption">
-                                                    <h4 class="mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                                                    <h5 class="mb-10">Lorem ipsum dolor sit amet, consectetur.</h5>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <h5 class="mb-10">Unordered List</h5>
-                                                    <ul>
-                                                        <li>Duis aute irure dolor in reprehenderit in voluptate.</li>
-                                                        <li>Sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                                                        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
-                                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                                        <li>Duis aute irure dolor in reprehenderit in voluptate.</li>
-                                                        <li>Sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                                                        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
-                                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                                    </ul>
-                                                    <h5 class="mb-10">Ordered List</h5>
-                                                    <ol>
-                                                        <li>Duis aute irure dolor in reprehenderit in voluptate.</li>
-                                                        <li>Sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                                                        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
-                                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                                        <li>Duis aute irure dolor in reprehenderit in voluptate.</li>
-                                                        <li>Sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-                                                        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
-                                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                                                    </ol>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-12">
-                                            <div class="card-box mb-30">
-                                                <h5 class="pd-20 h5 mb-0">Categories</h5>
-                                                <div class="list-group">
-                                                    <a href="#" class="list-group-item d-flex align-items-center justify-content-between">HTML <span class="badge badge-primary badge-pill">7</span></a>
-                                                    <a href="#" class="list-group-item d-flex align-items-center justify-content-between">Css <span class="badge badge-primary badge-pill">10</span></a>
-                                                    <a href="#" class="list-group-item d-flex align-items-center justify-content-between active">Bootstrap <span class="badge badge-primary badge-pill">8</span></a>
-                                                    <a href="#" class="list-group-item d-flex align-items-center justify-content-between">jQuery <span class="badge badge-primary badge-pill">15</span></a>
-                                                    <a href="#" class="list-group-item d-flex align-items-center justify-content-between">Design <span class="badge badge-primary badge-pill">5</span></a>
-                                                </div>
-                                            </div>
-                                            <div class="card-box mb-30">
-                                                <h5 class="pd-20 h5 mb-0">Latest Post</h5>
-                                                <div class="latest-post">
-                                                    <ul>
-                                                        <li>
-                                                            <h4><a href="#">Ut enim ad minim veniam, quis nostrud exercitation ullamco</a></h4>
-                                                            <span>HTML</span>
-                                                        </li>
-                                                        <li>
-                                                            <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h4>
-                                                            <span>Css</span>
-                                                        </li>
-                                                        <li>
-                                                            <h4><a href="#">Ut enim ad minim veniam, quis nostrud exercitation ullamco</a></h4>
-                                                            <span>jQuery</span>
-                                                        </li>
-                                                        <li>
-                                                            <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h4>
-                                                            <span>Bootstrap</span>
-                                                        </li>
-                                                        <li>
-                                                            <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h4>
-                                                            <span>Design</span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="card-box overflow-hidden">
-                                                <h5 class="pd-20 h5 mb-0">Archives</h5>
-                                                <div class="list-group">
-                                                    <a href="#" class="list-group-item d-flex align-items-center justify-content-between">January 2020</a>
-                                                    <a href="#" class="list-group-item d-flex align-items-center justify-content-between">February 2020</a>
-                                                    <a href="#" class="list-group-item d-flex align-items-center justify-content-between">March 2020</a>
-                                                    <a href="#" class="list-group-item d-flex align-items-center justify-content-between">April 2020</a>
-                                                    <a href="#" class="list-group-item d-flex align-items-center justify-content-between">May 2020</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                    </div>
+                    
+                    <div class="title pb-20">
+                        <h2 class="h3 mb-0"> Dados Gerais </h2>
+                    </div>
+                    <div class="row pb-10">
+                        <div class="col-xl-3 col-lg-3 col-md-6 mb-20">
+                            <div class="card-box height-100-p widget-style3">
+                                <div class="d-flex flex-wrap">
+                                    <div class="widget-data">
+                                        <div class="weight-700 font-24 text-dark">75</div>
+                                        <div class="font-14 text-secondary weight-500"> Posts Criados</div>
+                                    </div>
+                                    <div class="widget-icon">
+                                        <div class="icon" data-color="#00eccf"><i class="icon-copy dw dw-calendar1"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 mb-20">
+                            <div class="card-box height-100-p widget-style3">
+                                <div class="d-flex flex-wrap">
+                                    <div class="widget-data">
+                                        <div class="weight-700 font-24 text-dark">124,551</div>
+                                        <div class="font-14 text-secondary weight-500"> Alcance</div>
+                                    </div>
+                                    <div class="widget-icon">
+                                        <div class="icon" data-color="#ff5b5b"><span class="icon-copy ti-heart"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 mb-20">
+                            <div class="card-box height-100-p widget-style3">
+                                <div class="d-flex flex-wrap">
+                                    <div class="widget-data">
+                                        <div class="weight-700 font-24 text-dark">400+</div>
+                                        <div class="font-14 text-secondary weight-500"> Cliques</div>
+                                    </div>
+                                    <div class="widget-icon">
+                                        <div class="icon"><i class="icon-copy fa fa-stethoscope" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 mb-20">
+                            <div class="card-box height-100-p widget-style3">
+                                <div class="d-flex flex-wrap">
+                                    <div class="widget-data">
+                                        <div class="weight-700 font-24 text-dark"> $50,000</div>
+                                        <div class="font-14 text-secondary weight-500"> Expectativa de ganho</div>
+                                    </div>
+                                    <div class="widget-icon">
+                                        <div class="icon" data-color="#09cc06"><i class="icon-copy fa fa-money" aria-hidden="true"></i></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            -->
-        </main>
 
-        <footer>
-            <div class="footer-wrap pd-20 mb-20 card-box">
-				&copy;<script>document.write(new Date().getFullYear());</script> <strong>Jobei</strong>. Todos os Direitos Reservados
-			</div>
-        </footer>
+
+                    <div class="title pb-20">
+                        <h2 class="h3 mb-0"> Para você </h2>
+                    </div>  
+                    <div class="product-wrap">
+                        <div class="product-list">
+                            <ul class="row">
+                                <li class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="product-box">
+                                        <div class="producct-img"><img src="./../assets/img/product-img4.jpg" alt=""></div>
+                                        <div class="product-caption">
+                                            <h4><a href="#">Gufram Bounce Black</a></h4>
+                                            <div class="price">
+                                                <del>$55.5</del><ins>$49.5</ins>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="product-box">
+                                        <div class="producct-img"><img src="./../assets/img/product-img4.jpg" alt=""></div>
+                                        <div class="product-caption">
+                                            <h4><a href="#">Gufram Bounce White</a></h4>
+                                            <div class="price">
+                                                <del>$75.5</del><ins>$50</ins>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="product-box">
+                                        <div class="producct-img"><img src="./../assets/img/product-img4.jpg" alt=""></div>
+                                        <div class="product-caption">
+                                            <h4><a href="#">Contrast Lace-Up Sneakers</a></h4>
+                                            <div class="price">
+                                                <ins>$80</ins>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="product-box">
+                                        <div class="producct-img"><img src="./../assets/img/product-img4.jpg" alt=""></div>
+                                        <div class="product-caption">
+                                            <h4><a href="#">Apple Watch Series 3</a></h4>
+                                            <div class="price">
+                                                <ins>$380</ins>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                                        </div>
+                                    </div>
+                                </li>			
+                            </ul>
+                        </div>					
+                    </div>  
+
+
+                    <div class="title pb-20">
+                        <h2 class="h3 mb-0"> Gráficos </h2>
+                    </div>
+                    <div class="row pb-10">
+                        <div class="col-md-8 mb-20">
+                            <div class="card-box height-100-p pd-20">
+                                <div class="d-flex flex-wrap justify-content-between align-items-center pb-0 pb-md-3">
+                                    <div class="h5 mb-md-0"> Atividades </div>
+                                    <div class="form-group mb-md-0">
+                                        <select class="form-control form-control-sm selectpicker">
+                                            <option value="">Last Week</option>
+                                            <option value="">Last Month</option>
+                                            <option value="">Last 6 Month</option>
+                                            <option value="">Last 1 year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div id="activities-chart"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-20">
+                            <div class="card-box min-height-200px pd-20 mb-20" data-bgcolor="#455a64">
+                                <div class="d-flex justify-content-between pb-20 text-white">
+                                    <div class="icon h1 text-white">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <!-- <i class="icon-copy fa fa-stethoscope" aria-hidden="true"></i> -->
+                                    </div>
+                                    <div class="font-14 text-right">
+                                        <div><i class="icon-copy ion-arrow-up-c"></i> 2.69%</div>
+                                        <div class="font-12">Since last month</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="text-white">
+                                        <div class="font-14">Appointment</div>
+                                        <div class="font-24 weight-500">1865</div>
+                                    </div>
+                                    <div class="max-width-150">
+                                        <div id="appointment-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-box min-height-200px pd-20" data-bgcolor="#265ed7">
+                                <div class="d-flex justify-content-between pb-20 text-white">
+                                    <div class="icon h1 text-white">
+                                        <i class="fa ti-heart" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="font-14 text-right">
+                                        <div><i class="icon-copy ion-arrow-down-c"></i> 3.69%</div>
+                                        <div class="font-12">Since last month</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <div class="text-white">
+                                        <div class="font-14">Surgery</div>
+                                        <div class="font-24 weight-500">250</div>
+                                    </div>
+                                    <div class="max-width-150">
+                                        <div id="surgery-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                  
+                </div>
+
+
+            
+                <div class="footer-wrap pd-20 mb-20 card-box">
+                    &copy;<script>document.write(new Date().getFullYear());</script> <strong>Jobei</strong>. Todos os Direitos Reservados
+                </div>
+            </div> 
+        </main>        
 
         <script src="./../assets/js/core.js"></script>
 		<script src="./../assets/js/script.min.js"></script>
 		<script src="./../assets/js/process.js"></script>
 		<script src="./../assets/js/layout-settings.js"></script>
+        <script src="./../assets/plugins/apexcharts/apexcharts.min.js"></script>
+        <script src="./../assets/plugins/datatables/js/jquery.dataTables.min.js"></script>
+        <script src="./../assets/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+        <script src="./../assets/plugins/datatables/js/dataTables.responsive.min.js"></script>
+        <script src="./../assets/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+        <script src="./../assets/js/dashboard3.js"></script>
     </body>
 </html>

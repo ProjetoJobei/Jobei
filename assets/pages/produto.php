@@ -1,7 +1,6 @@
 <?php 
     include './../../conecta.php'; 
-    $consulta = "SELECT * FROM produto";
-    $consulta1 = "SELECT * FROM produto WHERE cod_produto = 1";
+    $consulta = "SELECT * FROM produto WHERE cod_produto = 1";    
 ?>
 
 <!DOCTYPE html>
