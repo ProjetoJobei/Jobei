@@ -1,4 +1,5 @@
 <?php
+    include './../conecta.php';
     session_start();
 ?>
 
@@ -242,7 +243,7 @@
                                         <div class="font-14 text-secondary weight-500"> Cliques</div>
                                     </div>
                                     <div class="widget-icon">
-                                        <div class="icon"><i class="icon-copy fa fa-stethoscope" aria-hidden="true"></i></div>
+                                        <div class="icon"><i class="icon-copy fa fa-pointer" aria-hidden="true"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -252,7 +253,7 @@
                                 <div class="d-flex flex-wrap">
                                     <div class="widget-data">
                                         <div class="weight-700 font-24 text-dark"> $50,000</div>
-                                        <div class="font-14 text-secondary weight-500"> Expectativa de ganho</div>
+                                        <div class="font-14 text-secondary weight-500"> Expectativa de lucro</div>
                                     </div>
                                     <div class="widget-icon">
                                         <div class="icon" data-color="#09cc06"><i class="icon-copy fa fa-money" aria-hidden="true"></i></div>

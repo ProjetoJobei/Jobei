@@ -1,31 +1,28 @@
 <?php    
-    include './../conecta.php';
-    session_start();
+    require('./../conecta.php'); 
+    session_start();   
 
     // Informações básicas
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $senha = md5($_POST['senha']);
+    $nome = $_POST['nome_user'];
+    $email = $_POST['email_user'];
+    $senha = md5($_POST['senha_user']);
     $nivel = 1; // por padrão
     // Informações pessoais
-    $nome_completo = $_POST['nome_completo'];
-    $genero = $_POST['genero'];
-    $cidade = $_POST['cidade'];
-    $estado = $_POST['estado'];
+    $nome_completo = $_POST['nome_completo_user'];
+    $genero = filter_input(INPUT_POST, 'genero_user');
+    $cidade = $_POST['cidade_user'];
+    $estado = $_POST['estado_user'];
     // Métodos de pagamento
-    $pagamento = $_POST['tipo_pagamento'];
-    $cartao = $_POST['numero_cartao'];
-    $cvc = $_POST['cvc'];
-    $mes_expira = $_POST['mes_expira'];
-    $ano_expira = $_POST['ano_expira'];
-    // Termos de serviço e políticas de privacidade
-    $termos = $_POST['termos'];
+    $pagamento = $_POST['tipo_de_pagamento'];
+    $cartao = $_POST['numero_cartao_user'];
+    $cvc = $_POST['cvc_user'];
+    $mes_expira = $_POST['mes_expira_cartao'];
+    $ano_expira = $_POST['ano_expira_cartao'];
 
-    $consulta = "INSERT INTO `usuario` (user_id, nome, nome_completo, email, senha, genero, cidade, estado, nivel) VALUES (NULL, '$nome', '$nome_completo', '$email', '$senha', '$genero', '$cidade', '$estado','$nivel')";
+    $consulta = "INSERT INTO `usuario` (nome, email, senha, nivel, nome_completo, genero) VALUES ('$nome', '$email', '$senha', '$nivel', '$nome_completo', '$genero')";
     $consulta = "INSERT INTO `pagamento` (tipo_pagamento, numero_cartao, cvc, mes_expira, ano_expira) VALUES ('$pagamento', '$cartao', '$cvc', '$mes_expira', '$ano_expira')";
+    $consulta = "INSERT INTO `regiao` (cidade, estado) VALUES ('$cidade', '$estado')";
     $conexao -> query($consulta);
 
-    //! INSERT INTO `usuario` (`user_id`, `nome`, `email`, `senha`, `nivel`, `nome_completo`, `genero`, `cidade`, `estado`) VALUES (NULL, '', '', '', '', '', '', NULL, NULL)
-
-    header('Location: ./../login.html');
+    header('Location: ./restrita.php');
 ?>

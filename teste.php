@@ -3,6 +3,7 @@
     $consulta = "SELECT * FROM usuario";
     $consulta1 = "SELECT * FROM produto";
     $consulta2 = "SELECT * FROM pagamento";
+	$consulta3 = "SELECT * FROM regiao";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -13,7 +14,7 @@
 	</head>
 	<body>		
 		<section id="slider">
-        <div class="container">
+        	<div class="container">
 				<h3>Usuarios</h3>
 				<table>
 					<thead>
@@ -25,8 +26,6 @@
                             <th scope="col">Senha </th>  
 							<th scope="col">Nivel </th>  
                             <th scope="col">Gênero </th>  
-                            <th scope="col">Cidade </th>  
-							<th scope="col">Estado </th>     
 						</tr>
 					</thead>            
 					<?php 
@@ -41,8 +40,6 @@
                                 <td><?php echo $linha['senha']; ?></td>
 								<td><?php echo $linha['nivel']; ?></td>
                                 <td><?php echo $linha['genero']; ?></td>
-                                <td><?php echo $linha['cidade']; ?></td>
-								<td><?php echo $linha['estado']; ?></td>
 							</tr>
 						</tbody>
 					<?php
@@ -117,6 +114,32 @@
                                 <td><?php echo $linha['ano_expira']; ?></td>
 							</tr>
 						</tbody> 
+					<?php
+					}
+					?>
+				</table>				
+			</div>
+
+			<div class="container">
+				<h3>Regiões</h3>
+				<table>
+					<thead>
+						<tr>
+							<th scope="col">Código </th> 
+                            <th scope="col">Cidade </th>  
+							<th scope="col">Estado </th>     
+						</tr>
+					</thead>            
+					<?php 
+					foreach ($conexao -> query($consulta3) as $linha) {
+					?>                
+						<tbody>
+							<tr>
+								<td><?php echo $linha['cod_regiao']; ?></td>
+                                <td><?php echo $linha['cidade']; ?></td>
+								<td><?php echo $linha['estado']; ?></td>
+							</tr>
+						</tbody>
 					<?php
 					}
 					?>

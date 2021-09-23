@@ -1,9 +1,6 @@
 <?php 
     include './conecta.php';
-	session_start();
-
-    $consulta = "SELECT * FROM usuario";
-    $consulta1 = "SELECT * FROM pagamento";
+	session_start();	
 ?>
 
 <!DOCTYPE html>
@@ -65,11 +62,11 @@
 										<div class="form-wrap max-width-600 mx-auto">
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label"> Nome de usuário </label>
-												<div class="col-sm-8"> <input name="nome" type="text" class="form-control" required> </div>
+												<div class="col-sm-8"> <input name="nome_user" type="text" class="form-control" required> </div>
 											</div>
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label"> Email </label>
-												<div class="col-sm-8"> <input name="email" type="email" class="form-control" required> </div>
+												<div class="col-sm-8"> <input name="email_user" type="email" class="form-control" required> </div>
 											</div>											
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label"> Senha </label>
@@ -77,7 +74,7 @@
 											</div>
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label"> Confirmar senha </label>
-												<div class="col-sm-8"> <input name="senha" type="password" class="form-control" required> </div>
+												<div class="col-sm-8"> <input name="senha_user" type="password" class="form-control" required> </div>
 											</div>
 										</div>
 									</section>
@@ -88,33 +85,64 @@
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label"> Nome completo </label>
 												<div class="col-sm-8">
-													<input name="nome_completo" type="text" class="form-control" required>
+													<input name="nome_completo_user" type="text" class="form-control" required>
 												</div>
 											</div>
 											<div class="form-group row align-items-center">
 												<label class="col-sm-4 col-form-label"> Gênero </label>
-												<div class="col-sm-8">
+
+												<div class="col-sm-8">													
 													<div class="custom-control custom-radio custom-control-inline pb-0">
-														<input type="radio" id="male" name="genero" class="custom-control-input">
+														<input type="radio" value="male" name="genero_user" id="male" class="custom-control-input">
 														<label class="custom-control-label" for="male"> Masculino </label>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline pb-0">
-														<input type="radio" id="female" name="genero" class="custom-control-input">
+														<input type="radio" value="female" name="genero_user" id="female" class="custom-control-input">
 														<label class="custom-control-label" for="female"> Feminino </label>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline pb-0">
-														<input type="radio" id="no-gender" name="genero" class="custom-control-input">
+														<input type="radio" value="no-gender" name="genero_user" id="no-gender" class="custom-control-input">
 														<label class="custom-control-label" for="no-gender"> Prefiro não dizer </label>
 													</div>
 												</div>
 											</div>
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label"> Cidade </label>
-												<div class="col-sm-8"> <input name="cidade" type="text" class="form-control" required> </div>
+												<div class="col-sm-8"> <input name="cidade_user" type="text" class="form-control" required> </div>
 											</div>
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label"> Estado </label>
-												<div class="col-sm-8"> <input name="estado" type="text" class="form-control" required> </div>
+												<div class="col-sm-8"> 
+													<select name="estado_user" class="form-control selectpicker" title="  ">
+														<option value="AC"> Acre </option>
+														<option value="AL"> Alagoas </option>
+														<option value="AP"> Amapá </option>
+														<option value="AM"> Amazonas </option>
+														<option value="BA"> Bahia </option>
+														<option value="CE"> Ceará </option>
+														<option value="DF"> Distrito Federal </option>
+														<option value="ES"> Espírito Santo </option>
+														<option value="GO"> Goiás </option>
+														<option value="MA"> Maranhão </option>
+														<option value="MT"> Mato Grosso </option>
+														<option value="MS"> Mato Grosso do Sul </option>
+														<option value="MG"> Minas Gerais </option>
+														<option value="PA"> Pará </option>
+														<option value="PB"> Paraíba </option>
+														<option value="PR"> Paraná </option>
+														<option value="PE"> Pernambuco </option>
+														<option value="PI"> Piauí </option>
+														<option value="RJ"> Rio de Janeiro </option>
+														<option value="RN"> Rio Grande do Norte </option>
+														<option value="RS"> Rio Grande do Sul </option>
+														<option value="RO"> Rondônia </option>
+														<option value="RR"> Roraima </option>
+														<option value="SC"> Santa Catarina </option>
+														<option value="SP"> São Paulo </option>
+														<option value="SE"> Sergipe </option>
+														<option value="TO"> Tocantins </option>
+													</select>
+												</div>
 											</div>
 										</div>
 									</section>
@@ -125,7 +153,7 @@
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label"> Tipo </label>
 												<div class="col-sm-8">
-													<select name="tipo_pagamento" class="form-control selectpicker" title="Selecione um tipo">
+													<select name="tipo_de_pagamento" class="form-control selectpicker" title="Selecione um tipo">
 														<option value="1"> Crédito </option>
 														<option value="2"> Débito </option>
 														<option value="3"> Boleto </option>
@@ -134,48 +162,48 @@
 											</div>
 											<div class="form-group row align-items-center">
 												<label class="col-sm-4 col-form-label"> Número do cartão </label>
-												<div class="col-sm-8"> <input name="numero_cartao" type="text" class="form-control"> </div>
+												<div class="col-sm-8"> <input name="numero_cartao_user" type="text" class="form-control"> </div>
 											</div>
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label"> CVC </label>
-												<div class="col-sm-3"> <input name="cvc" type="text" class="form-control"> </div>
+												<div class="col-sm-3"> <input name="cvc_user" type="text" class="form-control"> </div>
 											</div>
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label"> Data de expiração </label>
 												<div class="col-sm-8">
 													<div class="row">
 														<div class="col-6">
-															<select name="mes_expira" class="form-control selectpicker" title="Mês" data-size="5">
-																<option value='01'> Janeiro </option>
-																<option value='02'> Fevereiro </option>
-																<option value='03'> Março </option>
-																<option value='04'> Abril </option>
-																<option value='05'> Maio </option>
-																<option value='06'> Junho </option>
-																<option value='07'> Julho </option>
-																<option value='08'> Agosto </option>
-																<option value='09'> Setembro </option>
-																<option value='10'> Outubro </option>
-																<option value='11'> Novembro </option>
-																<option value='12'> Dezembro </option>
+															<select name="mes_expira_cartao" class="form-control selectpicker" title="Mês" data-size="5">
+																<option value='Janeiro'> Janeiro </option>
+																<option value='Fevereiro'> Fevereiro </option>
+																<option value='Março'> Março </option>
+																<option value='Abril'> Abril </option>
+																<option value='Maio'> Maio </option>
+																<option value='Junho'> Junho </option>
+																<option value='Julho'> Julho </option>
+																<option value='Agosto'> Agosto </option>
+																<option value='Setembro'> Setembro </option>
+																<option value='Outubro'> Outubro </option>
+																<option value='Novembro'> Novembro </option>
+																<option value='Dezembro'> Dezembro </option>
 															</select>
 														</div>
 														<div class="col-6">
-															<select name="ano_expira" class="form-control selectpicker" title="Ano" data-size="5">
-																<option> 2020 </option>
-																<option> 2021 </option>
-																<option> 2022 </option>
-																<option> 2023 </option>
-																<option> 2024 </option>
-																<option> 2025 </option>
-																<option> 2026 </option>
+															<select name="ano_expira_cartao" class="form-control selectpicker" title="Ano" data-size="5">
+																<option value='2022'> 2022 </option>
+																<option value='2023'> 2023 </option>
+																<option value='2024'> 2024 </option>
+																<option value='2025'> 2025 </option>
+																<option value='2026'> 2026 </option>
+																<option value='2027'> 2027 </option>
+																<option value='2028'> 2028 </option>
 															</select>
 														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</section>
+									</section>									
 
 									<h5> Confirmação </h5>
 									<section>
@@ -184,36 +212,36 @@
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Nome completo </div>
-														<div class="col-sm-8"> Exemplo <?php echo $_GET['nome_completo']; ?> </div>
+														<div class="col-sm-8"> Exemplo <?php echo $nome_completo; ?> </div>
 													</div>
 												</li>
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Nome de usuário </div>
-														<div class="col-sm-8"> Ex <?php echo $_POST['nome']; ?> </div>
+														<div class="col-sm-8"> Ex <?php echo $nome; ?> </div>
 													</div>
 												</li>
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Email </div>
-														<div class="col-sm-8"> exemplo@abc.com <?php $linha['email']; ?> </div>
+														<div class="col-sm-8"> exemplo@abc.com <?php $email; ?> </div>
 													</div>
 												</li>
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Pagamento </div>
-														<div class="col-sm-8"> Débito <?php $linha['tipo_pagamento']; ?> .....000 </div>
+														<div class="col-sm-8"> Débito <?php $tipo_de_pagamento; ?> .....000 </div>
 													</div>
 												</li>												
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Localização </div>
-														<div class="col-sm-8"> Cidade <?php $linha['cidade']; ?> - Estado <?php $linha['estado']; ?> </div>
+														<div class="col-sm-8"> Cidade <?php $cidade_user; ?> - Estado <?php $estado_user; ?> </div>
 													</div>
 												</li>
 											</ul>
 											<div class="custom-control custom-checkbox mt-4">
-												<input type="checkbox" class="custom-control-input" id="termos" required>
+												<input type="checkbox" class="custom-control-input" onClick="checked" id="termos" required>
 												<label class="custom-control-label" for="termos"> Li e concordo com os termos de serviço e políticas de privacidade </label>
 											</div>
 										</div>
