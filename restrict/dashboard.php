@@ -38,6 +38,7 @@
         <link rel="stylesheet" type="text/css" href="./../assets/css/icon-font.min.css">
         <link rel="stylesheet" type="text/css" href="./../assets/plugins/datatables/css/dataTables.bootstrap4.min.css">
 	    <link rel="stylesheet" type="text/css" href="./../assets/plugins/datatables/css/responsive.bootstrap4.min.css">
+        <link rel="stylesheet" type="text/css" href="./../assets/plugins/dropzone/src/dropzone.css">
         <link rel="stylesheet" type="text/css" href="./../assets/css/style.css">
         
         <!-- Google Font -->
@@ -157,17 +158,16 @@
                             <ul class="submenu">
                                 <li><a href="javascript:;"> Publicados </a></li>
                                 <li><a href="javascript:;"> Rascunhos </a></li>
-                                <li><a href="javascript:;"> Arquivados </a></li>
-                                <li class="dropdown">
-                                    <a href="javascript:;" class="dropdown-toggle">
-                                        <span class="micon dw dw-upload1"></span><span class="mtext"> Criar </span>  
-                                    </a>
-                                    <ul class="submenu child">
-                                        <li><a href="javascript:;"> Produto </a></li>
-                                        <li><a href="javascript:;"> Propaganda </a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="javascript:;"> -- </a></li>
+                                <li><a href="javascript:;"> Arquivados </a></li>                               
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="javascript:;" class="dropdown-toggle">
+                                <span class="micon dw dw-upload1"></span><span class="mtext"> Criar </span>  
+                            </a>
+                            <ul class="submenu child">
+                                <li><a data-toggle="modal" data-target="#modalCriaProduto"> Produto </a></li>
+                                <li><a data-toggle="modal" data-target="#modalCriaPropaganda"> Propaganda </a></li>
                             </ul>
                         </li>
                         <li>
@@ -194,7 +194,7 @@
                     <div class="card-box pd-20 height-100-p mb-30">                    
                         <div class="row align-items-center">
                             <div class="col-md-4">
-                                <img src="vendors/images/banner-img.png" alt="">
+                                <img src="./../assets/img/banner-img.png" alt="">
                             </div>
                             <div class="col-md-8">
                                 <h4 class="font-20 weight-500 mb-10 text-capitalize">
@@ -390,12 +390,133 @@
                 </div>
 
 
-            
+                <div class="modal fade bs-example-modal-lg" id="modalCriaProduto" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="myLargeModalLabel">Novo Produto</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+							<div class="modal-body">
+                                <form action="./cadastra_produto.php" method="post">
+                                    <div class="form-group">
+                                        <label class="col-sm-12 col-md-2 col-form-label">Nome</label>
+                                        <div class="col-sm-12 col-md-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-12 col-md-2 col-form-label">Descrição</label>
+                                        <div class="col-sm-12 col-md-10">
+                                            <textarea class="form-control" placeholder="Insira uma descrição aqui"></textarea>
+                                        </div>                                        
+                                    </div>  
+                                    <div class="form-group">
+                                        <label class="col-sm-12 col-md-2 col-form-label">Especificações</label>
+                                        <div class="col-sm-12 col-md-10">
+                                            <input class="form-control" type="text" placeholder="Cor, tamanho, validade...">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-12 col-md-2 col-form-label">Itens inclusos</label>
+                                        <div class="col-sm-12 col-md-10">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>    
+                                    <div class="form-group">
+                                        <label class="col-sm-12 col-md-2 col-form-label">Quantidade disponível</label>
+                                        <div class="col-sm-12 col-md-10">
+                                            <input class="form-control" placeholder="10" type="number">
+                                        </div>
+                                    </div>
+                                </form>		
+                                <form class="dropzone" action="./cadastra_produto.php" method="post" id="produtoImagens">                                    
+                                    <div class="fallback">
+                                        <input type="file" name="file" />
+                                    </div>
+                                </form>				
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal" id="sa-success">Publicar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <div class="modal fade bs-example-modal-lg" id="modalCriaPropaganda" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-lg modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="myLargeModalLabel">Nova Propaganda</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							</div>
+							<div class="modal-body">										
+                                <form action="./cadastra_propaganda.php" method="post">
+                                    <div class="select-role">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn active">
+                                                <input type="radio" name="options" id="admin">
+                                                <div class="icon"><img src="vendors/images/briefcase.svg" class="svg" alt=""></div>
+                                                <span>I'm</span> Manager
+                                            </label>
+                                            <label class="btn">
+                                                <input type="radio" name="options" id="user">
+                                                <div class="icon"><img src="vendors/images/person.svg" class="svg" alt=""></div>
+                                                 <span>I'm</span> Employee
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="input-group custom">
+                                        <input type="text" class="form-control form-control-lg" placeholder="Username">
+                                        <div class="input-group-append custom">
+                                            <span class="input-group-text"><i class="icon-copy dw dw-user1"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group custom">
+                                        <input type="password" class="form-control form-control-lg" placeholder="**********">
+                                        <div class="input-group-append custom">
+                                            <span class="input-group-text"><i class="dw dw-padlock1"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="row pb-30">
+                                        <div class="col-6">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">Remember</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="forgot-password"><a href="forgot-password.html">Forgot Password</a></div>
+                                        </div>
+                                    </div>                                                    
+                                </form>											
+							</div>                                      
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-primary" data-dismiss="modal" id="sa-success">Publicar</button>                                            
+							</div>
+						</div>
+					</div>
+				</div>
+
                 <div class="footer-wrap pd-20 mb-20 card-box">
                     &copy;<script>document.write(new Date().getFullYear());</script> <strong>Jobei</strong>. Todos os Direitos Reservados
                 </div>
             </div> 
-        </main>        
+        </main>       
+        
+        <script>
+            Dropzone.autoDiscover = false;
+            $(".dropzone").dropzone({
+                addRemoveLinks: true,
+                removedfile: function(file) {
+                    var name = file.name;
+                    var _ref;
+                    return (_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
+                }
+            });
+        </script>
 
         <script src="./../assets/js/core.js"></script>
 		<script src="./../assets/js/script.min.js"></script>
@@ -406,6 +527,9 @@
         <script src="./../assets/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
         <script src="./../assets/plugins/datatables/js/dataTables.responsive.min.js"></script>
         <script src="./../assets/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+        <script src="./../assets/plugins/sweetalert2/sweetalert2.all.js"></script>
+	    <script src="./../assets/plugins/sweetalert2/sweet-alert.init.js"></script>        
         <script src="./../assets/js/dashboard3.js"></script>
+        <script src="./../assets/plugins/dropzone/src/dropzone.js"></script> 
     </body>
 </html>
