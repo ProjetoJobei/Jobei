@@ -1,9 +1,5 @@
 <?php
-    include './../conecta.php';
     session_start();
-
-    $consulta = "SELECT * FROM usuario WHERE user_id = ?";
-    $linha = $conexao -> query($consulta);
 ?>
 
 <!DOCTYPE html>
@@ -201,7 +197,7 @@
                             </div>
                             <div class="col-md-8">
                                 <h4 class="font-20 weight-500 mb-10 text-capitalize">
-                                    Seja bem-vindo <div class="weight-600 font-30 text-blue"> <?php echo $linha['nome']; ?> </div>
+                                    Seja bem-vindo <div class="weight-600 font-30 text-blue"> <?php echo $_SESSION['nome']; ?> </div>
                                 </h4>
                                 <p class="font-18 max-width-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde hic non repellendus debitis iure, doloremque assumenda. Autem modi, corrupti, nobis ea iure fugiat, veniam non quaerat mollitia animi error corporis.</p>
                             </div>

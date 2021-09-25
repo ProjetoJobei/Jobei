@@ -1,13 +1,6 @@
 <?php 
     session_start();
+    session_destroy();
 
-    unset(
-        $_SESSION['id'],
-		$_SESSION['nome'],
-		$_SESSION['email'],
-		$_SESSION['senha'],
-        $_SESSION['nivel']
-    );
-
-    header('Location: ./../login.html');
+    header('Location: ./../login.php');
 ?>

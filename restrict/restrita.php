@@ -1,16 +1,7 @@
 <?php
-	require('./../conecta.php'); 
 	session_start();
+	require('./../conecta.php'); 	
 
-	if (
-		(!isset($_SESSION['user_id']) == true) && 
-		(!isset($_SESSION['nome']) == true ) &&
-		(!isset($_SESSION['email']) == true) && 
-		(!isset($_SESSION['senha']) == true) && 
-		(!isset($_SESSION['nivel']) == true)) 
-	{ 
-		header('Location: ./dashboard.php'); 
-	} else { 
-		header('Location: ./../login.html'); 
-	}
+	//echo "EUREKA<br>".$_SESSION['user_id']."<br>".$_SESSION['email']."<br>".$_SESSION['nome']."<br>".$_SESSION['nivel'];
+	header('Location: ./dashboard.php'); 
 ?>

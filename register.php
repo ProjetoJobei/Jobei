@@ -1,5 +1,4 @@
 <?php 
-    include './conecta.php';
 	session_start();
 ?>
 
@@ -44,7 +43,7 @@
 				<div class="brand-logo"> <a href="./index.html"> <img src="./assets/img/icons/logo-secundario.png" alt="Logo"> </a> </div>
 				<div class="login-menu">
 					<ul>
-						<li> <a href="./login.html"> Entrar </a> </li>
+						<li> <a href="./login.php"> Entrar </a> </li>
 					</ul>
 				</div>
 			</div>
@@ -62,7 +61,7 @@
 										<div class="form-wrap max-width-600 mx-auto">
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label"> Nome de usuário </label>
-												<div class="col-sm-8"> <input name="nome_user" type="text" class="form-control" required> </div>
+												<div class="col-sm-8"> <input name="nome_user" type="text" id="nome_user" class="form-control" required> </div>
 											</div>
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label"> Email </label>
@@ -85,7 +84,7 @@
 											<div class="form-group row">
 												<label class="col-sm-4 col-form-label"> Nome completo </label>
 												<div class="col-sm-8">
-													<input name="nome_completo_user" type="text" class="form-control" required>
+													<input name="nome_completo_user" id="nome_completo_user" type="text" class="form-control" required>
 												</div>
 											</div>
 											<div class="form-group row align-items-center">
@@ -208,35 +207,35 @@
 									<h5> Confirmação </h5>
 									<section>
 										<div class="form-wrap max-width-600 mx-auto">
-											<ul class="register-info">												
+											<ul id="ConfirmaDados" class="register-info">
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Nome completo </div>
-														<div class="col-sm-8"> Exemplo <?php echo $nome_completo; ?> </div>
+														<div class="col-sm-8"> ${nomeCompleto} </div>
 													</div>
-												</li>
+												</li>													
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Nome de usuário </div>
-														<div class="col-sm-8"> Ex <?php echo $nome; ?> </div>
+														<div class="col-sm-8"> ${nome}</div>
 													</div>
 												</li>
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Email </div>
-														<div class="col-sm-8"> exemplo@abc.com <?php $email; ?> </div>
+														<div class="col-sm-8"> ${email} </div>
 													</div>
 												</li>
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Pagamento </div>
-														<div class="col-sm-8"> Débito <?php $tipo_de_pagamento; ?> .....000 </div>
+														<div class="col-sm-8"> ${tipoPpagamento} - .....000 </div>
 													</div>
 												</li>												
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Localização </div>
-														<div class="col-sm-8"> Cidade <?php $cidade_user; ?> - Estado <?php $estado_user; ?> </div>
+														<div class="col-sm-8"> ${cidade} - ${estado} </div>
 													</div>
 												</li>
 											</ul>
