@@ -2,6 +2,7 @@
     $host = "localhost";
     $usuario = "root";
     $banco = "3830548_jobei";     
+    //$banco = "testes_jobei";  
     $senha = "";
 
     $conexao = mysqli_connect($host, $usuario, $senha, $banco);

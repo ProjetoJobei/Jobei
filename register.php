@@ -1,6 +1,6 @@
 <?php 
     include './conecta.php';
-	session_start();	
+	session_start();
 ?>
 
 <!DOCTYPE html>
@@ -93,15 +93,15 @@
 
 												<div class="col-sm-8">													
 													<div class="custom-control custom-radio custom-control-inline pb-0">
-														<input type="radio" value="male" name="genero_user" id="male" class="custom-control-input">
+														<input type="radio" value="Masculino" name="genero_user" id="male" class="custom-control-input">
 														<label class="custom-control-label" for="male"> Masculino </label>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline pb-0">
-														<input type="radio" value="female" name="genero_user" id="female" class="custom-control-input">
+														<input type="radio" value="Feminino" name="genero_user" id="female" class="custom-control-input">
 														<label class="custom-control-label" for="female"> Feminino </label>
 													</div>
 													<div class="custom-control custom-radio custom-control-inline pb-0">
-														<input type="radio" value="no-gender" name="genero_user" id="no-gender" class="custom-control-input">
+														<input type="radio" value="Prefiro não dizer" name="genero_user" id="no-gender" class="custom-control-input">
 														<label class="custom-control-label" for="no-gender"> Prefiro não dizer </label>
 													</div>
 												</div>
@@ -252,23 +252,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<button type="button" id="success-modal-btn" hidden data-toggle="modal" data-target="#success-modal" data-backdrop="static">Launch modal</button>
-		<div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered max-width-400" role="document">
-				<div class="modal-content">
-					<div class="modal-body text-center font-18">
-						<h3 class="mb-20"> Sucesso!</h3>
-						<div class="mb-30 text-center"> <img src="./assets/img/success.png"> </div>
-						Entre para confirmar e ter acesso a sua conta
-					</div>
-					<div class="modal-footer justify-content-center">
-						<a href="./login.html" class="btn btn-primary"> Entrar </a>
-					</div>
-				</div>
-			</div>
-		</div>
+		</div>		
 
 		<script src="./assets/js/core.js"></script>
 		<script src="./assets/js/script.min.js"></script>

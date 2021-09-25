@@ -27,7 +27,7 @@
             header('Location: ./restrita.php');
         } else {
             header('Location: ./restrita.php');
-            //header('Location: ./../login.html');  
+            // header('Location: ./../login.html');  
             // echo $email."<br>"; echo $senha."<br>"; echo $nivel."<br>";
         }
     } else {
