@@ -1,11 +1,11 @@
 var options = {
 	series: [
 	{
-		name: "Patients",
-		data: [10, 15, 12, 20, 18, 26, 24, 25, 20, 25, 22, 30]
+		name: "Alcance",
+		data: [10, 15, 19, 20, 18, 26, 28, 25, 20, 30, 24, 30]
 	},
 	{
-		name: "Consultations",
+		name: "Conteúdo",
 		data: [15, 10, 17, 15, 23, 21, 30, 20, 26, 20, 28, 25]
 	}
 	],
@@ -48,7 +48,7 @@ var options = {
 		}
 	},
 	xaxis: {
-		categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+		categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dec'],
 		labels:{
 			style:{
 				colors: '#8c9094'
@@ -81,27 +81,27 @@ var options = {
 
 var options2 = {
 	series: [{
-		name: 'Week',
+		name: 'Semana',
 		data: [{
-			x: 'Monday',
+			x: 'Segunda',
 			y: 21
 		}, {
-			x: 'Tuesday',
+			x: 'Terça',
 			y: 22
 		}, {
-			x: 'Wednesday',
+			x: 'Quarta',
 			y: 10
 		}, {
-			x: 'Thursday',
+			x: 'Quinta',
 			y: 28
 		}, {
-			x: 'Friday',
+			x: 'Sexta',
 			y: 16
 		}, {
-			x: 'Saturday',
+			x: 'Sábado',
 			y: 21
 		}, {
-			x: 'Sunday',
+			x: 'Domingo',
 			y: 13
 		}],
 	}],
@@ -156,27 +156,27 @@ var options2 = {
 
 var options3 = {
 	series: [{
-		name: 'Week',
+		name: 'Semana',
 		data: [{
-			x: 'Monday',
+			x: 'Segunda',
 			y: 10
 		}, {
-			x: 'Tuesday',
+			x: 'Terça',
 			y: 8
 		}, {
-			x: 'Wednesday',
+			x: 'Quarta',
 			y: 15
 		}, {
-			x: 'Thursday',
+			x: 'Quinta',
 			y: 12
 		}, {
-			x: 'Friday',
+			x: 'Sexta',
 			y: 20
 		}, {
-			x: 'Saturday',
+			x: 'Sábado',
 			y: 14
 		}, {
-			x: 'Sunday',
+			x: 'Domingo',
 			y: 7
 		}],
 	}],

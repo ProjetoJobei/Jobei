@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require('./../conecta.php');   
 ?>
 
 <!DOCTYPE html>
@@ -102,8 +103,8 @@
                             <span class="user-name"> <?php echo $_SESSION['nome']; ?> </span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
-                            <a class="dropdown-item" href="./"> <i class="dw dw-user1"></i> Perfil </a> 
-                            <a class="dropdown-item" href="./"> <i class="dw dw-settings2"></i> Configurações </a> 
+                            <a class="dropdown-item" href="./../assets/pages/perfil.php"> <i class="dw dw-user1"></i> Perfil </a> 
+                            <a class="dropdown-item" href="./../assets/pages/perfil.php#setting"> <i class="dw dw-settings2"></i> Configurações </a> 
                             <a class="dropdown-item" href="./"> <i class="dw dw-help"></i> Ajuda </a> 
                             <a class="dropdown-item" href="./"> <i class="dw dw-library"></i> Minhas publicações </a>  
                             <a class="dropdown-item" href="./"> <i class="dw dw-crown"></i> Experimente o Premium </a> 
@@ -197,7 +198,7 @@
                             </div>
                             <div class="col-md-8">
                                 <h4 class="font-20 weight-500 mb-10 text-capitalize">
-                                    Seja bem-vindo <div class="weight-600 font-30 text-blue"> <?php echo $_SESSION['nome']; ?> </div>
+                                    Seja bem-vindo <div class="weight-600 font-30 text-blue"> <?php echo $_SESSION['nome_completo']; ?> </div>
                                 </h4>
                                 <p class="font-18 max-width-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde hic non repellendus debitis iure, doloremque assumenda. Autem modi, corrupti, nobis ea iure fugiat, veniam non quaerat mollitia animi error corporis.</p>
                             </div>
@@ -269,54 +270,31 @@
                     <div class="product-wrap">
                         <div class="product-list">
                             <ul class="row">
-                                <li class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="product-box">
-                                        <div class="producct-img"><img src="./../assets/img/product-img4.jpg" alt=""></div>
-                                        <div class="product-caption">
-                                            <h4><a href="#">Gufram Bounce Black</a></h4>
-                                            <div class="price">
-                                                <del>$55.5</del><ins>$49.5</ins>
+                                <?php
+                                    $consulta = "SELECT * FROM produto INNER JOIN usuario ON produto.autor = usuario.user_id ORDER BY data_publicacao DESC";
+                                    //$resultado = "SELECT usuario.nome_completo AS autor FROM usuario INNER JOIN produto ON produto.autor = usuario.user_id";  
+                                    
+                                                                   
+                                    foreach ($conexao -> query($consulta) as $linha) {
+                                ?>
+                                    <li class="col-lg-3 col-md-6 col-sm-12">
+                                        <div class="product-box">
+                                            <div class="producct-img"><img src="./../assets/img/product-img4.jpg" alt=""></div>
+                                            <div class="product-caption">
+                                                <h4><a href="#"> <?php echo $linha['nome_produto'] ?> </a></h4>
+                                                <div class="price">
+                                                    <ins> <?php echo $linha['autor'] ?></ins>
+                                                </div>
+                                                <?php 
+                                                    //$consulta1 = "SELECT * FROM produto WHERE cod_produto = '$cod_produto'";
+                                                ?>
+                                                <a href="./../assets/pages/produto.php?<?php /*echo $linha['cod_produto']*/ ?>" class="btn btn-outline-primary"> Ver </a>
                                             </div>
-                                            <a href="#" class="btn btn-outline-primary">Read More</a>
                                         </div>
-                                    </div>
-                                </li>
-                                <li class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="product-box">
-                                        <div class="producct-img"><img src="./../assets/img/product-img4.jpg" alt=""></div>
-                                        <div class="product-caption">
-                                            <h4><a href="#">Gufram Bounce White</a></h4>
-                                            <div class="price">
-                                                <del>$75.5</del><ins>$50</ins>
-                                            </div>
-                                            <a href="#" class="btn btn-outline-primary">Add To Cart</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="product-box">
-                                        <div class="producct-img"><img src="./../assets/img/product-img4.jpg" alt=""></div>
-                                        <div class="product-caption">
-                                            <h4><a href="#">Contrast Lace-Up Sneakers</a></h4>
-                                            <div class="price">
-                                                <ins>$80</ins>
-                                            </div>
-                                            <a href="#" class="btn btn-outline-primary">Add To Cart</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="product-box">
-                                        <div class="producct-img"><img src="./../assets/img/product-img4.jpg" alt=""></div>
-                                        <div class="product-caption">
-                                            <h4><a href="#">Apple Watch Series 3</a></h4>
-                                            <div class="price">
-                                                <ins>$380</ins>
-                                            </div>
-                                            <a href="#" class="btn btn-outline-primary">Read More</a>
-                                        </div>
-                                    </div>
-                                </li>			
+                                    </li>
+                                <?php                                        
+                                    }
+                                ?>        
                             </ul>
                         </div>					
                     </div>  
@@ -332,10 +310,10 @@
                                     <div class="h5 mb-md-0"> Atividades </div>
                                     <div class="form-group mb-md-0">
                                         <select class="form-control form-control-sm selectpicker">
-                                            <option value="">Last Week</option>
-                                            <option value="">Last Month</option>
-                                            <option value="">Last 6 Month</option>
-                                            <option value="">Last 1 year</option>
+                                            <option value="">Última Semana</option>
+                                            <option value="">Últimos 30 dias</option>
+                                            <option value="">Últimos 6 Meses</option>
+                                            <option value="">Último Ano</option>
                                         </select>
                                     </div>
                                 </div>
@@ -346,17 +324,17 @@
                             <div class="card-box min-height-200px pd-20 mb-20" data-bgcolor="#455a64">
                                 <div class="d-flex justify-content-between pb-20 text-white">
                                     <div class="icon h1 text-white">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <i class="fa ti-heart" aria-hidden="true"></i>
                                         <!-- <i class="icon-copy fa fa-stethoscope" aria-hidden="true"></i> -->
                                     </div>
                                     <div class="font-14 text-right">
                                         <div><i class="icon-copy ion-arrow-up-c"></i> 2.69%</div>
-                                        <div class="font-12">Since last month</div>
+                                        <div class="font-12">Desde o último mês</div>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-end">
                                     <div class="text-white">
-                                        <div class="font-14">Appointment</div>
+                                        <div class="font-14">Alcance</div>
                                         <div class="font-24 weight-500">1865</div>
                                     </div>
                                     <div class="max-width-150">
@@ -367,16 +345,16 @@
                             <div class="card-box min-height-200px pd-20" data-bgcolor="#265ed7">
                                 <div class="d-flex justify-content-between pb-20 text-white">
                                     <div class="icon h1 text-white">
-                                        <i class="fa ti-heart" aria-hidden="true"></i>
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
                                     </div>
                                     <div class="font-14 text-right">
                                         <div><i class="icon-copy ion-arrow-down-c"></i> 3.69%</div>
-                                        <div class="font-12">Since last month</div>
+                                        <div class="font-12">Desde o último mês</div>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-end">
                                     <div class="text-white">
-                                        <div class="font-14">Surgery</div>
+                                        <div class="font-14">Conteúdo</div>
                                         <div class="font-24 weight-500">250</div>
                                     </div>
                                     <div class="max-width-150">
@@ -388,7 +366,7 @@
                     </div>                                  
                 </div>
 
-
+                <!-- Criar Produto -->
                 <div class="modal fade bs-example-modal-lg" id="modalCriaProduto" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg modal-dialog-centered">
 						<div class="modal-content">
@@ -401,48 +379,49 @@
                                     <div class="form-group">
                                         <label class="col-sm-12 col-md-2 col-form-label">Nome</label>
                                         <div class="col-sm-12 col-md-10">
-                                            <input class="form-control" type="text">
+                                            <input name="nomeProduto" class="form-control" type="text">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-sm-12 col-md-2 col-form-label">Descrição</label>
                                         <div class="col-sm-12 col-md-10">
-                                            <textarea class="form-control" placeholder="Insira uma descrição aqui"></textarea>
+                                            <textarea name="descricaoProduto" class="form-control" placeholder="Insira uma descrição aqui"></textarea>
                                         </div>                                        
                                     </div>  
                                     <div class="form-group">
                                         <label class="col-sm-12 col-md-2 col-form-label">Especificações</label>
                                         <div class="col-sm-12 col-md-10">
-                                            <input class="form-control" type="text" placeholder="Cor, tamanho, validade...">
+                                            <input name="especificaProduto" class="form-control" type="text" placeholder="Cor, tamanho, validade...">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-sm-12 col-md-2 col-form-label">Itens inclusos</label>
                                         <div class="col-sm-12 col-md-10">
-                                            <input class="form-control" type="text">
+                                            <input name="itemsInclusosProduto" class="form-control" type="text">
                                         </div>
-                                    </div>    
+                                    </div>   <!-- 
                                     <div class="form-group">
                                         <label class="col-sm-12 col-md-2 col-form-label">Quantidade disponível</label>
                                         <div class="col-sm-12 col-md-10">
                                             <input class="form-control" placeholder="10" type="number">
                                         </div>
                                     </div>
-                                </form>		
-                                <form class="dropzone" action="./cadastra_produto.php" method="post" id="produtoImagens">                                    
-                                    <div class="fallback">
-                                        <input type="file" name="file" />
-                                    </div>
-                                </form>				
+                                    <form class="dropzone" action="./cadastra_produto.php" method="post" id="produtoImagens">                                    
+                                        <div class="fallback">
+                                            <input name="mediaProduto" type="file" name="file" />
+                                        </div>
+                                    </form>	 -->
+                                </form>			
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-								<button type="button" class="btn btn-primary" data-dismiss="modal" id="sa-success">Publicar</button>
+								<button type="submit" class="btn btn-primary" data-dismiss="modal" id="sa-success">Publicar</button>
 							</div>
 						</div>
 					</div>
 				</div>
 
+                <!-- Criar Propaganda -->
                 <div class="modal fade bs-example-modal-lg" id="modalCriaPropaganda" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg modal-dialog-centered">
 						<div class="modal-content">
@@ -450,51 +429,26 @@
 								<h4 class="modal-title" id="myLargeModalLabel">Nova Propaganda</h4>
 								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 							</div>
-							<div class="modal-body">										
+							<div class="modal-body">
                                 <form action="./cadastra_propaganda.php" method="post">
-                                    <div class="select-role">
-                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                            <label class="btn active">
-                                                <input type="radio" name="options" id="admin">
-                                                <div class="icon"><img src="vendors/images/briefcase.svg" class="svg" alt=""></div>
-                                                <span>I'm</span> Manager
-                                            </label>
-                                            <label class="btn">
-                                                <input type="radio" name="options" id="user">
-                                                <div class="icon"><img src="vendors/images/person.svg" class="svg" alt=""></div>
-                                                 <span>I'm</span> Employee
-                                            </label>
+                                    <div class="form-group">
+                                        <label class="col-sm-12 col-md-2 col-form-label">Título</label>
+                                        <div class="col-sm-12 col-md-10">
+                                            <input name="tituloPropaganda" class="form-control" type="text">
                                         </div>
                                     </div>
-                                    <div class="input-group custom">
-                                        <input type="text" class="form-control form-control-lg" placeholder="Username">
-                                        <div class="input-group-append custom">
-                                            <span class="input-group-text"><i class="icon-copy dw dw-user1"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="input-group custom">
-                                        <input type="password" class="form-control form-control-lg" placeholder="**********">
-                                        <div class="input-group-append custom">
-                                            <span class="input-group-text"><i class="dw dw-padlock1"></i></span>
-                                        </div>
-                                    </div>
-                                    <div class="row pb-30">
-                                        <div class="col-6">
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                <label class="custom-control-label" for="customCheck1">Remember</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="forgot-password"><a href="forgot-password.html">Forgot Password</a></div>
-                                        </div>
-                                    </div>                                                    
-                                </form>											
-							</div>                                      
+                                    <div class="form-group">
+                                        <label class="col-sm-12 col-md-2 col-form-label">Descrição</label>
+                                        <div class="col-sm-12 col-md-10">
+                                            <textarea name="descricaoPropaganda" class="form-control" placeholder="Insira uma descrição aqui"></textarea>
+                                        </div>                                        
+                                    </div>                                      
+                                </form>			
+							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                <button type="submit" class="btn btn-primary" data-dismiss="modal" id="sa-success">Publicar</button>                                            
-							</div>
+								<button type="submit" class="btn btn-primary" data-dismiss="modal" id="sa-success">Publicar</button>
+							</div>	
 						</div>
 					</div>
 				</div>

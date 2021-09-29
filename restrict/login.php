@@ -14,6 +14,7 @@
         $usuario = mysqli_fetch_assoc($resultado);        
         $_SESSION['user_id'] = $usuario['user_id'];
         $_SESSION['nome'] = $usuario['nome'];
+        $_SESSION['nome_completo'] = $usuario['nome_completo'];
         $_SESSION['email'] = $email;
         $_SESSION['nivel'] = $nivel;               
             
