@@ -207,7 +207,7 @@ textarea.form-control{height:180px}
 .custom-control-label::after{width:20px;height:20px;left:-30px;background-size:60%;top:2px}
 .custom-control-input:focus~.custom-control-label::before{-webkit-box-shadow:none;box-shadow:none;background-color:none}
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before{background-color:#1b00ff}
-.custom-checkbox .custom-control-input:checked~.custom-control-label::after{background-image:url(../images/check-mark.png);background-repeat:no-repeat;background-position:center center}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after{background-image:url(./../img/check-mark.png);background-repeat:no-repeat;background-position:center center}
 .custom-radio .custom-control-input:checked~.custom-control-label::before{background-color:#1b00ff}
 .custom-checkbox .custom-control-input:disabled:checked~.custom-control-label::before{border:2px solid transparent}
 .select2-container .select2-selection--single{height:45px;border-color:#d4d4d4;outline:0;letter-spacing:.035em;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
@@ -385,7 +385,7 @@ body.IE .login-wrap .container,body.IE .register-page-wrap .container{padding-to
 .register-page-wrap,.register-page-wrap .wizard-content .wizard{position:relative;overflow:auto}
 .register-page-wrap .wizard-content .wizard .steps{position:relative}
 .register-page-wrap .wizard-content .wizard>.steps .step{position:relative;top:0;left:0;display:block;margin:0 auto;border-width:2px;background-color:#fff;border-color:rgba(24,31,72,.3)}
-.register-page-wrap .wizard-content .wizard>.steps>ul>li.done>a .step{background:url(../images/tick.svg) no-repeat #ecf0f4;font-size:0;background-size:22px;background-position:center center;border-color:rgba(24,31,72,.3)}
+.register-page-wrap .wizard-content .wizard>.steps>ul>li.done>a .step{background:url(./../img/tick.svg) no-repeat #ecf0f4;font-size:0;background-size:22px;background-position:center center;border-color:rgba(24,31,72,.3)}
 .register-page-wrap .wizard-content .wizard.wizard-circle>.steps>ul>li:after,.register-page-wrap .wizard-content .wizard.wizard-circle>.steps>ul>li:before,.wizard-content .wizard.wizard-circle>.steps>ul>li.current~li:after,.wizard-content .wizard.wizard-circle>.steps>ul>li.current~li:before{background:rgba(24,31,72,.3)}
 .wizard-content .wizard.vertical.wizard-circle>.steps>ul>li.current~li:after,.wizard-content .wizard.vertical.wizard-circle>.steps>ul>li.current~li:before{background-color:transparent}
 .register-page-wrap .wizard-content .wizard>.steps>ul>li.current .step{border-color:#1b00ff;color:#181f48;background-color:#fff}

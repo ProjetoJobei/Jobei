@@ -56,7 +56,7 @@
 					<div class="col-md-6 col-lg-5">
 						<div class="register-box bg-white box-shadow border-radius-10">
 							<div class="wizard-content">
-								<form action="./restrict/cadastro.php" method="post" id="cadastro_de_usuario" class="tab-wizard2 wizard-circle wizard">
+								<form action="./restrict/cadastro.php" method="post" id="cadastro_de_usuario" data-autosubmit class="tab-wizard2 wizard-circle wizard">
 									<h5> Informações básicas </h5>
 									<section>
 										<div class="form-wrap max-width-600 mx-auto">
@@ -107,6 +107,24 @@
 												</div>
 											</div>
 											<div class="form-group row">
+												<label class="col-sm-4 col-form-label"> Data de nascimento </label>
+												<div class="col-sm-8">
+													<input name="nascimento_user" type="text" class="form-control date-picker" required>
+												</div>
+											</div>	
+											<div class="form-group row">
+												<label class="col-sm-4 col-form-label"> Ocupação </label>
+												<div class="col-sm-8">
+													<input name="biografia_user" type="text" class="form-control">
+												</div>
+											</div>											
+										</div>
+									</section>
+									
+									<h5> Informações de contato </h5>
+									<section>
+										<div class="form-wrap max-width-600 mx-auto">
+											<div class="form-group row">
 												<label class="col-sm-4 col-form-label"> Cidade </label>
 												<div class="col-sm-8"> <input name="cidade_user" type="text" class="form-control" required> </div>
 											</div>
@@ -144,64 +162,12 @@
 													</select>
 												</div>
 											</div>
-										</div>
-									</section>
-									
-									<h5> Métodos de pagamento </h5>
-									<section>
-										<div class="form-wrap max-width-600 mx-auto">
 											<div class="form-group row">
-												<label class="col-sm-4 col-form-label"> Tipo </label>
+												<label class="col-sm-4 col-form-label"> Telefone </label>
 												<div class="col-sm-8">
-													<select name="tipo_de_pagamento" class="form-control selectpicker" title="Selecione um tipo">
-														<option value="1"> Crédito </option>
-														<option value="2"> Débito </option>
-														<option value="3"> Boleto </option>
-													</select>
+													<input name="telefone_user" type="text" class="form-control">
 												</div>
-											</div>
-											<div class="form-group row align-items-center">
-												<label class="col-sm-4 col-form-label"> Número do cartão </label>
-												<div class="col-sm-8"> <input name="numero_cartao_user" type="text" class="form-control"> </div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-4 col-form-label"> CVC </label>
-												<div class="col-sm-3"> <input name="cvc_user" type="text" class="form-control"> </div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-4 col-form-label"> Data de expiração </label>
-												<div class="col-sm-8">
-													<div class="row">
-														<div class="col-6">
-															<select name="mes_expira_cartao" class="form-control selectpicker" title="Mês" data-size="5">
-																<option value='Janeiro'> Janeiro </option>
-																<option value='Fevereiro'> Fevereiro </option>
-																<option value='Março'> Março </option>
-																<option value='Abril'> Abril </option>
-																<option value='Maio'> Maio </option>
-																<option value='Junho'> Junho </option>
-																<option value='Julho'> Julho </option>
-																<option value='Agosto'> Agosto </option>
-																<option value='Setembro'> Setembro </option>
-																<option value='Outubro'> Outubro </option>
-																<option value='Novembro'> Novembro </option>
-																<option value='Dezembro'> Dezembro </option>
-															</select>
-														</div>
-														<div class="col-6">
-															<select name="ano_expira_cartao" class="form-control selectpicker" title="Ano" data-size="5">
-																<option value='2022'> 2022 </option>
-																<option value='2023'> 2023 </option>
-																<option value='2024'> 2024 </option>
-																<option value='2025'> 2025 </option>
-																<option value='2026'> 2026 </option>
-																<option value='2027'> 2027 </option>
-																<option value='2028'> 2028 </option>
-															</select>
-														</div>
-													</div>
-												</div>
-											</div>
+											</div>												
 										</div>
 									</section>									
 
@@ -229,8 +195,8 @@
 												</li>
 												<li>
 													<div class="row">
-														<div class="col-sm-4 weight-600"> Pagamento </div>
-														<div class="col-sm-8"> ${tipoPpagamento} - .....000 </div>
+														<div class="col-sm-4 weight-600"> Data de Nascimento </div>
+														<div class="col-sm-8"> ${nascimentoUser} - .....000 </div>
 													</div>
 												</li>												
 												<li>
@@ -241,7 +207,7 @@
 												</li>
 											</ul>
 											<div class="custom-control custom-checkbox mt-4">
-												<input type="checkbox" class="custom-control-input" onClick="checked" id="termos" required>
+												<input type="checkbox" class="custom-control-input" onClick="submit" id="termos" required>
 												<label class="custom-control-label" for="termos"> Li e concordo com os termos de serviço e políticas de privacidade </label>
 											</div>
 										</div>

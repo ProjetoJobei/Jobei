@@ -85,7 +85,7 @@
                                 <ul>
                                     <li>
                                         <a href="#">
-                                        <img src="./../assets/img/icons/logo-quadrada.png" alt="">
+                                        <img src="./../img/icons/logo-quadrada.png" alt="">
                                             <h3> Equipe Jobei </h3>
                                             <p> Bem-vindo a rede social que te conecta aos de autônomos da sua região. </p>
                                         </a>
@@ -213,16 +213,25 @@
                                         </div>
                                     </div>
                                     <h5 class="text-center h5 mb-0"> <?php echo $_SESSION['nome_completo']; ?> </h5>
-                                    <p class="text-center text-muted font-14"> <?php echo $_SESSION['nivel']; ?> </p>
+                                    <p class="text-center text-muted font-14"> <?php echo $_SESSION['nome']; ?> </p>
                                     <div class="profile-info">
                                         <h5 class="mb-20 h5 text-blue">Informações de contato</h5>
                                         <ul>
                                             <li>
-                                                <span>Email:</span>  <?php echo $_SESSION['email']; ?>                                                 
-                                            </li>                                            
+                                                <?php 
+                                                    if ($_SESSION['nivel'] == 1) {
+                                                        echo "<span>Autônomo</span>";
+                                                    } else {
+                                                        echo "<span>Administrador</span>";
+                                                    }
+                                                    echo $_SESSION['biografia']; 
+                                                ?>                                                 
+                                            </li>  
                                             <li>
-                                                <span>Região:</span> Cidade | Estado
-                                                <!--<?php //echo $linha['cidade']; ?> <br> <?php //echo $linha['estado']; ?> -->
+                                                <span>Email:</span>  <?php echo $_SESSION['email']; ?>                                                 
+                                            </li>                                           
+                                            <li>
+                                                <span>Região:</span> <?php echo $_SESSION['cidade']; ?> | <?php echo $_SESSION['estado']; ?>                                                
                                             </li>
                                         </ul>
                                     </div>

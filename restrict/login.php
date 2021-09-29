@@ -16,7 +16,10 @@
         $_SESSION['nome'] = $usuario['nome'];
         $_SESSION['nome_completo'] = $usuario['nome_completo'];
         $_SESSION['email'] = $email;
-        $_SESSION['nivel'] = $nivel;               
+        $_SESSION['nivel'] = $nivel;     
+        $_SESSION['cidade'] = $cidade;
+        $_SESSION['estado'] = $estado;  
+        $_SESSION['biografia'] = $bio;                
             
         header('Location: ./restrita.php');
         //echo "Olá ".$_SESSION['nome']."!<br>".$_SESSION['email']."<br>"; echo $_SESSION['senha']."<br>"; echo $_SESSION['nivel']."<br>";

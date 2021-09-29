@@ -11,22 +11,17 @@
     $genero = mysqli_real_escape_string($conexao, filter_input(INPUT_POST, 'genero_user')); 
     $cidade = mysqli_real_escape_string($conexao, $_POST['cidade_user']);
     $estado = mysqli_real_escape_string($conexao, $_POST['estado_user']);
-    
-    // Métodos de pagamento (OPCIONAL)
-    $pagamento = mysqli_real_escape_string($conexao, $_POST['tipo_de_pagamento']);
-    $cartao = mysqli_real_escape_string($conexao, $_POST['numero_cartao_user']);
-    $cvc = mysqli_real_escape_string($conexao, $_POST['cvc_user']);
-    $mes_expira = mysqli_real_escape_string($conexao, $_POST['mes_expira_cartao']);
-    $ano_expira = mysqli_real_escape_string($conexao, $_POST['ano_expira_cartao']);
+    $bio = mysqli_real_escape_string($conexao, $_POST['biografia_user']);
+    $data_nascimento = mysqli_real_escape_string($conexao, $_POST['nascimento_user']);
+    $telefone = mysqli_real_escape_string($conexao, $_POST['telefone_user']);
 
-    $cad = "INSERT INTO `usuario` (`nome`, `email`, `senha`, `nivel`, `nome_completo`, `genero`, `data_cadastro`) VALUES ('$nome', '$email', '$senha', '$nivel', '$nome_completo', '$genero', NOW())"; 
-    $cadas = "INSERT INTO `pagamento` (`tipo_pagamento`, `numero_cartao`, `cvc`, `mes_expira`, `ano_expira`) VALUES ('$pagamento', '$cartao', '$cvc', '$mes_expira', '$ano_expira')";
+
+    $cadas = "INSERT INTO `usuario` (`nome`, `email`, `senha`, `nivel`, `nome_completo`, `genero`, `data_cadastro`, `biografia`, `data_de_nascimento`, `telefone`) VALUES ('$nome', '$email', '$senha', '$nivel', '$nome_completo', '$genero', NOW(), '$bio', '$data_nascimento', '$telefone')";
     $cadastra = "INSERT INTO `regiao` (`cidade`, `estado`) VALUES ('$cidade', '$estado')";      
-    $conexao -> query($cad); 
     $conexao -> query($cadas); 
     $conexao -> query($cadastra); 
     
-    echo "Olá ".$nome."!<br>".$email."<br>"; echo $senha."<br>"; echo $nivel."<br>";
+    //echo "Olá ".$nome."!<br>".$email."<br>"; echo $senha."<br>"; echo $nivel."<br>";
     
     $consulta = "SELECT COUNT(*) AS total FROM usuario WHERE email = '{$email}' AND senha = md5('{$senha}') AND nivel = '{$nivel}'";
     $resultado = mysqli_query($conexao, $consulta);
@@ -35,8 +30,12 @@
     if ($registro['total'] == 0) {  
         $_SESSION['user-inexistent'] = true;
         $_SESSION['nome'] = $nome;
+        $_SESSION['nome_completo'] = $nome_completo;
         $_SESSION['email'] = $email;
-        $_SESSION['nivel'] = $nivel;         
+        $_SESSION['nivel'] = $nivel;    
+        $_SESSION['cidade'] = $cidade;
+        $_SESSION['estado'] = $estado;  
+        $_SESSION['biografia'] = $bio;      
     }
     //echo "Olá ".$_SESSION['nome']."!<br>".$_SESSION['email']."<br>"; echo $_SESSION['senha']."<br>"; echo $_SESSION['nivel']."<br>";
 
