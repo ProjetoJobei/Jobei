@@ -62,7 +62,7 @@
                 <div class="search-toggle-icon dw dw-search2" data-toggle="header_search"></div>
                 <div class="header-search">
                     <form>
-                        <div class="form-group mb-0">
+                        <div class="form-group pd-ltr-20 mb-0">
                             <i class="dw dw-search2 search-icon"></i>
                             <input type="text" class="form-control search-input" placeholder="Pesquisar">
                         </div>
@@ -106,7 +106,6 @@
                             <a class="dropdown-item" href="./../assets/pages/perfil.php"> <i class="dw dw-user1"></i> Perfil </a> 
                             <a class="dropdown-item" href="./../assets/pages/perfil.php#setting"> <i class="dw dw-settings2"></i> Configurações </a> 
                             <a class="dropdown-item" href="./"> <i class="dw dw-help"></i> Ajuda </a> 
-                            <a class="dropdown-item" href="./"> <i class="dw dw-library"></i> Minhas publicações </a>  
                             <a class="dropdown-item" href="./"> <i class="dw dw-crown"></i> Experimente o Premium </a> 
                             <hr class="dropdown-divider"> 
                             <a class="dropdown-item" href="./logout.php"> <i class="dw dw-logout"></i> Sair </a>                        
@@ -134,52 +133,46 @@
 
         <div class="left-side-bar">
             <div class="brand-logo">
-                <a href="./../index.html"> <img src="./../assets/img/icons/logo-secundario.png" alt="" class="light-logo"> </a>
+                <a href="./dashboard.php"> <img src="./../assets/img/icons/logo-secundario.png" alt="" class="light-logo"> </a>
                 <div class="close-sidebar" data-toggle="left-sidebar-close"> <i class="ion-close-round"></i> </div>
             </div>
             <div class="menu-block customscroll">
                 <div class="sidebar-menu">
                     <ul id="accordion-menu">                        
-                        <li class="dropdown">
-                            <a href="javascript:;" class="dropdown-toggle">
-                                <span class="micon dw dw-house-1"></span><span class="mtext"> Jobei </span>
-                            </a>
-                            <ul class="submenu">
-                                <li><a href="#"> Sobre </a></li>
-                                <li disabled><a href="#"> FAQ </a></li>
-                                <li><a href="#"> Planos </a></li>
-                                <li><a href="#"> Contato </a></li>
-                            </ul>
-                        </li>			
-                        <li class="dropdown">
-                            <a href="javascript:;" class="dropdown-toggle">
-                                <span class="micon dw dw-suitcase-11"></span><span class="mtext"> Meus Produtos </span>  
-                            </a>
-                            <ul class="submenu">
-                                <li><a href="javascript:;"> Publicados </a></li>
+                        <li>
+							<a href="./dashboard.php" class="dropdown-toggle no-arrow">
+								<span class="micon dw dw-house-1"></span><span class="mtext"> Home </span>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="dropdown-toggle no-arrow">
+								<span class="micon dw dw-right-arrow1"></span><span class="mtext"> Explore </span>
+							</a>							
+						</li>						
+						<li class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle">
+								<span class="micon dw dw-library"></span><span class="mtext"> Meus Posts </span>
+							</a>
+							<ul class="submenu">
+								<li><a href="javascript:;"> Publicados </a></li>
                                 <li><a href="javascript:;"> Rascunhos </a></li>
-                                <li><a href="javascript:;"> Arquivados </a></li>                               
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="javascript:;" class="dropdown-toggle">
-                                <span class="micon dw dw-upload1"></span><span class="mtext"> Criar </span>  
-                            </a>
-                            <ul class="submenu child">
+                                <li><a href="javascript:;"> Arquivados </a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle">
+								<span class="micon dw dw-edit2"></span><span class="mtext"> Criar </span>
+							</a>
+							<ul class="submenu child">
                                 <li><a data-toggle="modal" data-target="#modalCriaProduto"> Produto </a></li>
                                 <li><a data-toggle="modal" data-target="#modalCriaPropaganda"> Propaganda </a></li>
                             </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="dropdown-toggle no-arrow">
-                                <span class="micon dw dw-diagonal-arrow-81"></span><span class="mtext"> Explore </span>   
-                            </a>
-                        </li>						
+						</li>  						
                         <li>
                             <a href="javascript:;" class="dropdown-toggle no-arrow" data-toggle="right-sidebar">
                                 <span class="micon dw dw-chat3"></span><span class="mtext"> Chat </span>
                             </a>
-                        </li>															
+                        </li>														
                     </ul>
                 </div>
             </div>
@@ -189,8 +182,7 @@
 
         <main>  
             <div class="main-container">
-                <div class="pd-ltr-20">
-                    <h1> Página em desenvolvimento </h1> <br>
+                <div class="pd-ltr-20">                    
                     <div class="card-box pd-20 height-100-p mb-30">                    
                         <div class="row align-items-center">
                             <div class="col-md-4">
@@ -200,7 +192,7 @@
                                 <h4 class="font-20 weight-500 mb-10 text-capitalize">
                                     Seja bem-vindo <div class="weight-600 font-30 text-blue"> <?php echo $_SESSION['nome_completo']; ?> </div>
                                 </h4>
-                                <p class="font-18 max-width-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde hic non repellendus debitis iure, doloremque assumenda. Autem modi, corrupti, nobis ea iure fugiat, veniam non quaerat mollitia animi error corporis.</p>
+                                <p class="font-18 max-width-600"> O site ainda está passando por algumas manutenções, podendo haver erros e redundâncias nas funcionalidades durante a navegação. Agradecemos a compreensão. </p>
                             </div>
                         </div>
                     </div>

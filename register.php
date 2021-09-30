@@ -196,7 +196,7 @@
 												<li>
 													<div class="row">
 														<div class="col-sm-4 weight-600"> Data de Nascimento </div>
-														<div class="col-sm-8"> ${nascimentoUser} - .....000 </div>
+														<div class="col-sm-8"> ${nascimentoUser} </div>
 													</div>
 												</li>												
 												<li>

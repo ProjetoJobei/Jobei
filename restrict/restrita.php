@@ -2,6 +2,9 @@
 	session_start();
 	require('./../conecta.php'); 	
 
-	//echo "EUREKA<br>".$_SESSION['user_id']."<br>".$_SESSION['email']."<br>".$_SESSION['nome']."<br>".$_SESSION['nivel'];
-	header('Location: ./dashboard.php'); 
+	if ($_SESSION['nivel'] == 1) {
+		header('Location: ./dashboard.php'); 
+	} else if ($_SESSION['nivel'] == 2) {
+		header('Location: ./index.php'); 
+	} 	
 ?>
