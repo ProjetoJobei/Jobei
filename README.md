@@ -11,11 +11,11 @@
 ---
 
 <p align="center">    
-    <a href="http://jobei.atwebpages.com/index.html"> <b> Home </b> </a> - 
-    <a href="http://jobei.atwebpages.com/index.html#"> <b> Sobre </b> </a> - 
-    <a href="http://jobei.atwebpages.com/index.html#"> <b> Explore </b> </a> - 
-    <a href="http://jobei.atwebpages.com/index.html#"> <b> Planos </b> </a> - 
-    <a href="https://projetojobei.github.io/Jobei/#"> <b> Contato </b> </a>
+    <a href="http://jobei.infinityfreeapp.com/landing-page"> <b> Home </b> </a> - 
+    <a href="http://jobei.infinityfreeapp.com/landing-page/index.html#sobre"> <b> Sobre </b> </a> - 
+    <a href="http://jobei.infinityfreeapp.com/landing-page/index.html#explore"> <b> Explore </b> </a> - 
+    <a href="http://jobei.infinityfreeapp.com/landing-page/index.html#planos"> <b> Planos </b> </a> - 
+    <a href="http://jobei.infinityfreeapp.com/landing-page/index.html#contato"> <b> Contato </b> </a>
 </p>
 
 ---
