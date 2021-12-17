@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Planner </title>
+        <meta charset="UTF-8">
+        <meta name="descriptison" content="A rede social que te conecta ao trabalho de autônomos da sua região">
+        <meta name="keywords" content="job, autonomo, trabalho, freelancer, freela, liberal, profissional, divulgação">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">         
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="True">
+
+        <!-- Favicons-->
+        <link rel="icon" href="./../images/logo.png">
+        <link rel="apple-touch-icon" href="./../images/logo-quadrada.png">   
+        
+        <!-- Files -->
+		<link rel="stylesheet" type="text/css" href="./../styles/core.css">
+		<link rel="stylesheet" type="text/css" href="./../styles/icon-font.min.css">
+		<link rel="stylesheet" type="text/css" href="./../../src/plugins/cropperjs/dist/cropper.css">
+		<link rel="stylesheet" type="text/css" href="./../styles/style.css">
+        
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-119386393-1');
+        </script>
+    </head>
+    
+    <body>
+        <div class="header-dark header">
+			<div class="header-left">
+				<div class="menu-icon dw dw-menu"></div>				
+			</div>
+			<div class="header-right">				
+				<div class="user-notification">
+					<div class="dropdown">
+						<a class="dropdown-toggle no-arrow" href="#" role="button" data-toggle="dropdown">
+							<i class="icon-copy dw dw-notification"></i>
+							<span class="badge notification-active"></span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<div class="notification-list mx-h-350 customscroll">
+								<ul>									
+									<li>
+                                        <a href="#">
+                                            <img src="./../images/logo-quadrada.png" alt="">
+                                            <h3> Admin </h3>
+                                            <p> Olá! Se você busca divulgar seu trabalho está no lugar certo. <br> Faça seu cadastro e aproveite! </p>
+                                        </a>
+                                    </li> 
+                                    <li>
+                                        <a href="#">
+                                            <img src="./../images/logo-quadrada.png" alt="">
+                                            <h3> Equipe Jobei </h3>
+                                            <p> Bem-vindo a rede social que te conecta aos de autônomos da sua região. </p>
+                                        </a>
+                                    </li>          							
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="user-notification">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle no-arrow" href="./../../login.html" data-toggle="right-sidebar"> <i class="dw dw-user1"></i> Entrar </a> 
+                    </div>
+                </div>				
+			</div>
+		</div>
+		<div class="left-side-bar">
+			<div class="brand-logo">
+				<a href="./../../landing-page/index.html">
+					<img src="./../images/logo-secundario.png" alt="Logo" style="height: 1.5em;" class="light-logo">
+				</a>
+				<div class="close-sidebar" data-toggle="left-sidebar-close">
+					<i class="ion-close-round"></i>
+				</div>
+			</div>
+			<div class="menu-block customscroll">
+				<div class="sidebar-menu">
+					<ul id="accordion-menu">
+						<li>
+							<a href="./../../landing-page/index.html#sobre" class="dropdown-toggle no-arrow">
+								<span class="micon dw dw-house-1"></span><span class="mtext"> Sobre a Jobei </span>
+							</a>
+						</li>
+						<li>
+							<a href="./../../landing-page/index.html#explore" class="dropdown-toggle no-arrow">
+								<span class="micon dw dw-right-arrow1"></span><span class="mtext"> Explore </span>
+							</a>							
+						</li>
+						<li>
+							<a href="./../../landing-page/index.html#planos" class="dropdown-toggle no-arrow">
+								<span class="micon dw dw-crown"></span><span class="mtext"> Planos </span>
+							</a>
+						</li>
+                        <li>
+							<a href="./../../landing-page/index.html#contato" class="dropdown-toggle no-arrow">
+								<span class="micon dw dw-help"></span><span class="mtext"> Contato </span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="mobile-menu-overlay"></div>      
+
+        <div class="main-container">
+            <div class="pd-ltr-20 xs-pd-20-10">
+                <div class="min-height-200px">
+                    <div class="page-header">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="title"> <h4> Planner </h4> </div>
+                                <nav aria-label="breadcrumb" role="navigation">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#"> Autônomo Teste </a></li>
+                                        <li class="breadcrumb-item active" aria-current="page"> Detalhes do Produto </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-wrap">
+                        <div class="product-detail-wrap mb-30">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="product-slider slider-arrow">
+                                        <div class="product-slide">
+                                            <img src="./../images/Planner.jpg" alt="">
+                                        </div>                                            
+                                    </div>                                        
+                                </div>
+                                <div class="col-lg-8 col-md-12 col-sm-12">
+                                    <div class="product-detail-desc pd-20 card-box height-100-p">
+                                        <h4 class="mb-20 pt-10"> 
+                                            Planner
+                                            | R$15                                              
+                                        </h4>                                                    
+                                        <p> O planner é algo indispensável para o planejamento e organização de forma prática e dinâmica. Auxilia na visualização das tarefas diárias e semanais, evitando possíveis esquecimentos. O formato compacto garante funcionalidade e mobilidade. </p>
+                                                         
+                                        <h5 class="mb-10 pt-10"> ESPECIFICAÇÕES TÉCNICAS </h5>    
+                                        <ul>    
+                                            <li> <b>Modelo:</b> Capa dura </li>
+                                            <li> <b>Espiral:</b> Argolas metalizadas ou de plástico </li>
+                                            <li> <b>Cor:</b> Estampa personalizável </li>
+                                            <li> <b>Tamanho (cm):</b> 17,7 x 24 </li>  
+                                            <li> <b>Número de folhas:</b>  106 </li>  
+                                            <li> <b>Gramatura:</b> 90 G/M2 </li>                                        
+                                        </ul>
+
+                                        <div class="row mb-10 pt-10"> 
+                                            <div class="col-md-6 col-sm-12">
+                                                <h5 class="mb-10"> DETALHES </h5>                                              
+                                                <ul>
+                                                    <li> Planejamento anual; </li>
+                                                    <li> Planejamento mensal; </li>
+                                                    <li> Planejamento semanal; </li>
+                                                    <li> Planejamento financeiro (mensal); </li>
+                                                    <li> Página para metas e objetivos; </li>                                                    
+                                                </ul> 
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <h5 class="mb-10"> ITENS INCLUSOS </h5>                                              
+                                                <ul>
+                                                    <li> Calendário do ano vigente e seguinte; </li>
+                                                    <li> Bolsa plástica; </li>
+                                                    <li> Contém 12 divisórias decoradas; </li>
+                                                    <li> Folha de adesivos; </li>
+                                                    <li> Folhas decoradas. </li>
+                                                </ul>  
+                                            </div>
+                                        </div>          
+                                        
+                                        <div class="row pt-20">
+                                            <div class="col-md-6 col-6">
+                                                <a href="#" class="btn btn-primary btn-block"> Entrar em contato </a>
+                                            </div>
+                                            <div class="col-md-6 col-6">
+                                                <a href="#" class="btn btn-outline-primary btn-block"> Comprar </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+
+                        <h4 class="mb-20"> Recentes </h4>
+                        <div class="product-list">
+                            <ul class="row">
+                                <li class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="product-box">
+                                        <div class="producct-img"><img src="./../images/product-img4.jpg"></div>
+                                        <div class="product-caption">
+                                            <h4> Óculos de Realidade Virtual </h4>
+                                            <div class="price">                                                
+                                                <del><small>R$55.5</small></del> R$49.5      
+                                            </div>
+                                            <a href="./ex_produto.html" class="btn btn-outline-primary"> Ver mais</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="product-box">
+                                        <div class="producct-img"><img src="./../images/product-img2.jpg"></div>
+                                        <div class="product-caption">
+                                            <h4>Escrivaninhas Personalizadas</h4>
+                                            <div class="price">
+                                                <del><small>R$75.5</small></del> R$50
+                                            </div>
+                                            <a href="./ex_produto1.html" class="btn btn-outline-primary">Ver mais</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="product-box">
+                                        <div class="producct-img"><img src="./../images/product-img3.jpg"></div>
+                                        <div class="product-caption">
+                                            <h4>Luz de Leitura</h4>
+                                            <div class="price">
+                                                <ins>R$30</ins>
+                                            </div>
+                                            <a href="./ex_produto2.html" class="btn btn-outline-primary">Ver mais</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="product-box">
+                                        <div class="producct-img"><img src="./../images/img4.jpg"></div>
+                                        <div class="product-caption">
+                                            <h4>Guarda-chuva</h4>
+                                            <div class="price">
+                                                <ins>R$25</ins>
+                                            </div>
+                                            <a href="#" class="btn btn-outline-primary">Ver mais</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>  
+                <div class="footer-wrap pd-20 mb-20 card-box">
+                    &copy;<script>document.write(new Date().getFullYear());</script> <strong>Jobei</strong>. Todos os Direitos Reservados
+                </div>                  
+            </div>
+        </div>
+
+        <script src="./../scripts/core.js"></script>
+        <script src="./../scripts/script.min.js"></script>
+        <script src="./../scripts/process.js"></script>
+        <script src="./../scripts/layout-settings.js"></script>
+
+        <!-- Slick Slider js -->
+        <script src="./../../src/plugins/slick/slick.min.js"></script>
+        <!-- bootstrap-touchspin js -->
+        <script src="./../../src/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+                jQuery('.product-slider').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    infinite: true,
+                    speed: 1000,
+                    fade: true,
+                    asNavFor: '.product-slider-nav'
+                });
+                jQuery('.product-slider-nav').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    asNavFor: '.product-slider',
+                    dots: false,
+                    infinite: true,
+                    arrows: false,
+                    speed: 1000,
+                    centerMode: true,
+                    focusOnSelect: true
+                });
+                $("input[name='demo3_22']").TouchSpin({
+                    initval: 1
+                });
+            });
+        </script>
+    </body>
+</html>

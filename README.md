@@ -1,11 +1,11 @@
-<p align="center"> <img width="15%" src="./assets/img/icons/logo.png"></img> </p>
+<p align="center"> <img width="15%" src="./web/vendors/images/logo.png"></img> </p>
 <h3 align="center"> Profissionais perto de você </h3>
 
 <p align="center">
-    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/BiancaFSilva/TCC">
-    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/BiancaFSilva/TCC">
-    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/BiancaFSilva/TCC">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/BiancaFSilva/TCC">
+    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/ProjetoJobei/Jobei">
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/ProjetoJobei/Jobei">
+    <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/ProjetoJobei/Jobei">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ProjetoJobei/Jobei">
 </p>
 
 ---
