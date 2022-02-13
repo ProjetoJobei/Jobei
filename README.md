@@ -9,27 +9,28 @@
 </p>
 
 ---
-
-<p align="center">    
-    <a href="http://jobei.infinityfreeapp.com/landing-page"> <b> Home </b> </a> - 
-    <a href="http://jobei.infinityfreeapp.com/landing-page/index.html#sobre"> <b> Sobre </b> </a> - 
-    <a href="http://jobei.infinityfreeapp.com/landing-page/index.html#explore"> <b> Explore </b> </a> - 
-    <a href="http://jobei.infinityfreeapp.com/landing-page/index.html#planos"> <b> Planos </b> </a> - 
-    <a href="http://jobei.infinityfreeapp.com/landing-page/index.html#contato"> <b> Contato </b> </a>
-</p>
-
----
 ## :bookmark: Sobre
 Olá, somos a Jobei! 
-
 Uma plataforma cujo objetivo é estimular o comércio e o empreendedorismo local de forma que você possa contatar os serviços de trabalhadores autônomos da sua região de forma fácil e prática.
 
-<!-- 
+- [Landing Page](http://jobei.infinityfreeapp.com/landing-page)
+- [Sobre](http://jobei.infinityfreeapp.com/landing-page/index.html#sobre)
+- [Explore](http://jobei.infinityfreeapp.com/landing-page/index.html#explore)
+- [Planos](http://jobei.infinityfreeapp.com/landing-page/index.html#planos)
+- [Contato](http://jobei.infinityfreeapp.com/landing-page/index.html#contato)
+
 ## :rocket: Tecnologias 
+<p>
+    <img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
+    <img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
+    <img alt="PHP" src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white">
+    <img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
+    <img alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white">
+</p>
+
+<!--
 ## :zap: Como usar 
 -->
-
----
 
 ## :busts_in_silhouette: Equipe
   <b> Ana Carolyny </b>  
@@ -57,8 +58,6 @@ Projeto desenvolvido para o Trabalho de Conclusão de Curso (TCC) do Ensino Méd
 
 ### :memo: License
 Esse projeto está sob a [Licença MIT](LICENSE).
-
-
 
 
 ---
